@@ -10,3 +10,4 @@ const chainId = getQueryParam('chainid');
 // Make chainId globally accessible
 window.chainId = chainId;
 console.log(chainId);
+console.log("hello world");
