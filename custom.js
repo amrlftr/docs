@@ -1,14 +1,20 @@
 console.log("custom.js is loaded");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const urlParams = new URLSearchParams(window.location.search);
-  const chainId = urlParams.get("chainid");
+const urlParams = new URLSearchParams(window.location.search);
+const chainId = urlParams.get("chainid");
+console.log("Found chainId param:", chainId);
 
-  if (chainId) {
-    // Find all elements with the class 'chainid'
-    console.log(chainId)
-    document.querySelectorAll(".chainid").forEach((el) => {
-      el.textContent = chainId;
+// Wait for DOM hydration (for .chainid element to appear)
+const interval = setInterval(() => {
+  const placeholders = document.querySelectorAll(".chainid");
+
+  if (placeholders.length > 0) {
+    console.log("Found .chainid elements, updating...");
+
+    placeholders.forEach((el) => {
+      el.textContent = chainId || "unknown";
     });
+
+    clearInterval(interval); // Stop checking once updated
   }
-});
+}, 200); // check every 200ms
