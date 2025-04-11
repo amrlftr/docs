@@ -1,13 +1,11 @@
-// Function to get query parameters by name
-function getQueryParam(name) {
+document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(name);
-}
+  const chainId = urlParams.get("chainid");
 
-// Retrieve the 'chainid' parameter from the URL
-const chainId = getQueryParam('chainid');
-
-// Make chainId globally accessible
-window.chainId = chainId;
-console.log(chainId);
-console.log("hello world");
+  if (chainId) {
+    // Find all elements with the class 'chainid'
+    document.querySelectorAll(".chainid").forEach((el) => {
+      el.textContent = chainId;
+    });
+  }
+});
