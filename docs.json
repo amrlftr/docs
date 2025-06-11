@@ -98,5 +98,11 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "api": {
+    "baseUrl": "https://api.yourdomain.com",
+    "auth": {
+      "method": "bearer"
+    }
   }
 }
