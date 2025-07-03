@@ -1,1 +1,4 @@
-export const chain = 1;
+export const chain =
+  typeof window !== 'undefined' && localStorage.getItem('chain')
+    ? Number(localStorage.getItem('chain'))
+    : 1;
