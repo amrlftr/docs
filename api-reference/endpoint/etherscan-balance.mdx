@@ -1,0 +1,27 @@
+---
+title: 'Get account balance'
+api: 'GET /v2/api'
+---
+
+Retrieve the balance for a given address on the Etherscan API.
+
+<ParamFields>
+  <ParamField query="chainid" type="string" initialValue="999">
+    Chain ID of the network.
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Module name (set to 'account').
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="balance">
+    Action type (set to 'balance').
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0x388B9FECEDD37A5b9eA44062755f9Ea5bB8d7AE6">
+    Wallet address to query.
+  </ParamField>
+  <ParamField query="tag" type="string" initialValue="latest">
+    Block tag.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key.
+  </ParamField>
+</ParamFields>

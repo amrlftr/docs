@@ -47,7 +47,8 @@
           "api-reference/endpoint/get",
           "api-reference/endpoint/create",
           "api-reference/endpoint/delete",
-          "api-reference/endpoint/webhook"
+          "api-reference/endpoint/webhook",
+          "api-reference/endpoint/etherscan-balance"
         ]
       }
     ]
@@ -98,9 +99,12 @@
     }
   },
   "api": {
-    "baseUrl": "https://api.yourdomain.com",
-    "auth": {
-      "method": "bearer"
+    "mdx": {
+      "server": "https://api.etherscan.io",
+      "auth": {
+        "method": "key",
+        "name": "apikey"
+      }
     }
   }
 }
