@@ -1,0 +1,35 @@
+---
+title: 'Get Ether Balance for a Single Address'
+api: 'GET /v2/api'
+---
+
+Returns the Ether balance of a given address.
+
+<ParamFields>
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID of the network (1 for Ethereum mainnet).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Module name (set to 'account').
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="balance">
+    Action type (set to 'balance').
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae">
+    Wallet address to query.
+  </ParamField>
+  <ParamField query="tag" type="string" initialValue="latest">
+    Block tag ("earliest", "pending", or "latest").
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key.
+  </ParamField>
+</ParamFields>
+
+```
+https://api.etherscan.io/v2/api?chainid=1&module=account&action=balance&address=0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae&tag=latest&apikey=YourApiKeyToken
+```
+
+<Callout icon="link">
+Try this endpoint in your <a href="https://api.etherscan.io/v2/api?chainid=1&module=account&action=balance&address=0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae&tag=latest&apikey=YourApiKeyToken">browser</a>.
+</Callout>
