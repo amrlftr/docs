@@ -1,0 +1,1 @@
+Skip running any tests, lints or compilations, just edit code.
