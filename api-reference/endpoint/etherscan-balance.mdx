@@ -7,7 +7,7 @@ import { chain } from '/snippets/custom-variables.mdx';
 
 Returns the Ether balance of a given address on {chain}.
 
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" initialValue={chain}>
     Chain ID of the network {chain}.
   </ParamField>
   <ParamField query="module" type="string" initialValue="account">
