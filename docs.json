@@ -10,43 +10,43 @@
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
-  {
-    "tab": "Guides",
-    "groups": [
       {
-        "group": "Get Started",
-        "pages": [
-          "introduction",
-          "quickstart",
-          "development"
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets",
+              "essentials/react"
+            ]
+          }
         ]
       },
       {
-        "group": "Essentials",
-        "pages": [
-          "essentials/markdown",
-          "essentials/code",
-          "essentials/images",
-          "essentials/settings",
-          "essentials/navigation",
-          "essentials/reusable-snippets",
-          "essentials/react"
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api-reference/endpoint/etherscan-balance"
+            ]
+          }
         ]
       }
-    ]
-  },
-  {
-    "tab": "API Reference",
-    "groups": [
-      {
-        "group": "Endpoints",
-        "pages": [
-          "api-reference/endpoint/etherscan-balance"
-        ]
-      }
-    ]
-  }
-],
+    ],
     "global": {
       "anchors": [
         {
@@ -93,11 +93,7 @@
   },
   "api": {
     "mdx": {
-      "server": "https://api.etherscan.io",
-      "auth": {
-        "method": "key",
-        "name": "apikey"
-      }
+      "server": "https://api.etherscan.io"
     }
   }
 }
