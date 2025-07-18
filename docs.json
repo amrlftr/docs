@@ -1,47 +1,60 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Etherscan",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#21325b",
+    "light": "#21325b",
+    "dark": "#21325b"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "versions": [
       {
-        "tab": "Guides",
-        "groups": [
+        "version": "Ethereum (1)",
+        "tabs": [
           {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "development"
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "introduction",
+                  "development"
+                ]
+              },
+              {
+                "group": "Essentials",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/settings",
+                  "essentials/navigation",
+                  "essentials/reusable-snippets",
+                  "essentials/react"
+                ]
+              }
             ]
           },
           {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets",
-              "essentials/react"
+            "tab": "API Reference",
+            "groups": [
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "api-reference/endpoint/etherscan-balance"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "version": "Polygon (137)",
         "groups": [
           {
-            "group": "Endpoints",
-            "pages": [
-              "api-reference/endpoint/etherscan-balance"
-            ]
+            "group": "Getting Started"
           }
         ]
       }
@@ -67,8 +80,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/ethercan-logo.png",
+    "dark": "/logo/ethercan-logo-dark.svg"
   },
   "navbar": {
     "links": [
