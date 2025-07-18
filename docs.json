@@ -43,7 +43,8 @@
               {
                 "group": "Endpoints",
                 "pages": [
-                  "api-reference/endpoint/etherscan-balance"
+                  "api-reference/endpoint/etherscan-balance",
+                  "api-reference/endpoint/etherscan-transactions"
                 ]
               }
             ]
@@ -80,8 +81,8 @@
     }
   },
   "logo": {
-    "light": "/logo/ethercan-logo.png",
-    "dark": "/logo/ethercan-logo-dark.svg"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
