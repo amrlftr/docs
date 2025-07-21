@@ -81,8 +81,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/etherscan-logo-dark.svg",
+    "dark": "/logo/etherscan-logo-light.svg"
   },
   "navbar": {
     "links": [
