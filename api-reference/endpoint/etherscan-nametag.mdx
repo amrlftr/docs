@@ -1,0 +1,27 @@
+---
+title: 'Get Nametags for An Address'
+api: 'GET /v2/api'
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+
+Returns the nametags for a given address on {chain}.
+
+  <ParamField query="chainid" type="string" initialValue="somevalue" placeholder="test">
+    Chain ID of the network {chain}.
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Module name (set to 'account').
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="balance">
+    Action type (set to 'balance').
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae">
+    Wallet address to query.
+  </ParamField>
+  <ParamField query="tag" type="string" initialValue="latest">
+    Block tag ("earliest", "pending", or "latest").
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key.
+  </ParamField>
