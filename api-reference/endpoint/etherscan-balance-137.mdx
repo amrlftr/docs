@@ -3,9 +3,9 @@ title: 'Get Ether Balance for a Single Address'
 api: 'GET /v2/api'
 ---
 
-import { polygonChain } from '/snippets/custom-variables.mdx';
+import { polygonChain, polygonChainCurrency } from '/snippets/custom-variables.mdx';
 
-Returns the Ether balance of a given address on {polygonChain}.
+Returns the {polygonChainCurrency} balance of a given address on {polygonChain}.
 
   <ParamField query="chainid" type="string" initialValue="somevalue" default="somevalue" placeholder="test">
     Chain ID of the network {polygonChain}.

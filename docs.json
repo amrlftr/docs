@@ -24,15 +24,11 @@
                 ]
               },
               {
-                "group": "Essentials",
+                "group": "Use Cases",
                 "pages": [
                   "essentials/markdown",
                   "essentials/code",
-                  "essentials/images",
-                  "essentials/settings",
-                  "essentials/navigation",
-                  "essentials/reusable-snippets",
-                  "essentials/react"
+                  "essentials/images"
                 ]
               }
             ]
@@ -41,11 +37,15 @@
             "tab": "API Reference",
             "groups": [
               {
-                "group": "Endpoints",
+                "group": "Account",
                 "pages": [
-                  "api-reference/endpoint/etherscan-balance",
-                  "api-reference/endpoint/etherscan-transactions"
+                  "api-reference/endpoint/etherscan-balance"
                 ]
+              },
+              {
+                "group": "Contract",
+                "pages": [
+                  "api-reference/endpoint/etherscan-transactions"                ]
               }
             ]
           },
@@ -56,6 +56,17 @@
                 "group": "Endpoints",
                 "pages": [
                   "api-reference/endpoint/etherscan-nametag"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "MCP",
+            "groups": [
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "mcp/mcp-introduction"
                 ]
               }
             ]
@@ -74,30 +85,22 @@
                   "introduction",
                   "development"
                 ]
-              },
-              {
-                "group": "Essentials",
-                "pages": [
-                  "essentials/markdown",
-                  "essentials/code",
-                  "essentials/images",
-                  "essentials/settings",
-                  "essentials/navigation",
-                  "essentials/reusable-snippets",
-                  "essentials/react"
-                ]
               }
             ]
           },
-          {
+           {
             "tab": "API Reference",
             "groups": [
               {
-                "group": "Endpoints",
+                "group": "Account",
                 "pages": [
-                  "api-reference/endpoint/etherscan-balance-137",
-                  "api-reference/endpoint/etherscan-transactions-137"
+                  "api-reference/endpoint/etherscan-balance-137"
                 ]
+              },
+              {
+                "group": "Contract",
+                "pages": [
+                  "api-reference/endpoint/etherscan-transactions-137"                ]
               }
             ]
           }
@@ -107,19 +110,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
+          "anchor": "Status Page",
           "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "icon": "flag"
         },
         {
-          "anchor": "Community",
+          "anchor": "Support",
           "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "icon": "envelope"
         },
         {
-          "anchor": "Blog",
+          "anchor": "Explorer",
           "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "icon": "globe"
         }
       ]
     }
