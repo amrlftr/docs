@@ -27,14 +27,21 @@ export const Chain = () => {
   );
 };
 
-export const CreditChip = ({ description }) => {
+export const CreditChip = ({ description, pro = false }) => {
   return (
-    <div className="flex items-center justify-center gap-2">
+    <div className="flex items-center justify-start gap-2">
       {description && (
         <span className="text-sm text-zinc-950/80 dark:text-white/80">
           {description}
         </span>
       )}
+
+      {pro && (
+        <div className="flex items-center rounded-xl px-3 py-1 border border-green-600 bg-green-100 text-sm font-medium text-green-800">
+          PRO
+        </div>
+      )}
+
       <div className="flex items-center rounded-xl px-3 py-1 border border-zinc-950/20 dark:border-white/20 bg-zinc-100 dark:bg-zinc-800 text-sm font-medium text-zinc-950/80 dark:text-white/80">
         100 CU
       </div>
