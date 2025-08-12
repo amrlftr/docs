@@ -1,63 +1,83 @@
 ---
-title: "Common Error Messages"
+title: "Supported Chains"
 ---
 
-An API call that encounters an error :warning: will return 0 as its `status code` and display the cause of the error under the `result` field.
+{% hint style="info" %}
+Polygon zkEVM (1101) has been replaced by the new Katana (747474) chain.
+{% endhint %}
 
-```http
-{
-   "status":"0",
-   "message":"NOTOK",
-   "result":"Max rate limit reached, please use API Key for higher rate limit"
-}
-```
+For Solana data, we're also working on the [**Solscan APIs**](https://solscan.io/apis), available separately.
 
-### Invalid API Key
-
-> "Invalid API Key"
-
-This error occurs when you specify an invalid API Key, or use a key from an explorer on a [**different chain**](../faq#can-the-same-api-keys-be-used-across-different-explorers).
-
-To resolve, ensure that you have copy pasted the right key from the right explorer.
-
-New API Keys may also take a moment to be fully activated, so if your fresh key is throwing an error consider waiting for a few minutes.
-
-### Max rate limit
-
-> "Max rate limit reached, please use API Key for higher rate limit"
-
-This error occurs when you **exceed the rate limit** assigned to your specific API key.
-
-To resolve, adhere to the [**rate limits**](rate-limits) of your available plan by waiting for a certain amount of time before each request. If you are using a script or application, **apply throttling** to limit the frequency of calls.
-
-### Missing or invalid action
-
-> "Error! Missing Or invalid Action name"
-
-This error occurs when you **do not specify**, or specify an **invalid** `module` and `action` name.
-
-To resolve, **double check** your API query to use a valid module and action name.
-
-If you require some help getting started, try copying the sample queries provided in the [**API Endpoints**](https://github.com/BlockSolutions/etherscan-api-docs/blob/master/support/broken-reference/README.md) and pasting them into your browser.
-
-### Endpoint-specific errors
-
-> "Error! Block number already pass"
->
-> "Error! Invalid address format"
->
-> "Contract source code not verified"
-
-These error messages returned are specific to certain endpoints and their **related parameters.**
-
-To resolve, kindly refer to the specific endpoint's documentation, and check for the **correct format** or **values** to be specified as **parameters.**
-
-### **Query Timeout**
-
-> "Query Timeout occured. Please select a smaller result dataset"
->
-> "Unexpected err, timeout occurred or server too busy. Please try again later"
-
-This error occurs when you have sent a particularly large query that did not manage to be completed in time.
-
-To resolve, consider selecting a smaller date/block range, though you may [**ping us**](getting-help) if you think the issue may be performance related.
+| Chain Name                | Chain ID    |
+| ------------------------- | ----------- |
+| Ethereum Mainnet          | 1           |
+| Sepolia Testnet           | 11155111    |
+| Holesky Testnet           | 17000       |
+| Hoodi Testnet             | 560048      |
+| Abstract Mainnet          | 2741        |
+| Abstract Sepolia Testnet  | 11124       |
+| ApeChain Curtis Testnet   | 33111       |
+| ApeChain Mainnet          | 33139       |
+| Arbitrum Nova Mainnet     | 42170       |
+| Arbitrum One Mainnet      | 42161       |
+| Arbitrum Sepolia Testnet  | 421614      |
+| Avalanche C-Chain         | 43114       |
+| Avalanche Fuji Testnet    | 43113       |
+| Base Mainnet              | 8453        |
+| Base Sepolia Testnet      | 84532       |
+| Berachain Mainnet         | 80094       |
+| Berachain Bepolia Testnet | 80069       |
+| BitTorrent Chain Mainnet  | 199         |
+| BitTorrent Chain Testnet  | 1028        |
+| Blast Mainnet             | 81457       |
+| Blast Sepolia Testnet     | 168587773   |
+| BNB Smart Chain Mainnet   | 56          |
+| BNB Smart Chain Testnet   | 97          |
+| Celo Alfajores Testnet    | 44787       |
+| Celo Mainnet              | 42220       |
+| Cronos Mainnet            | 25          |
+| Fraxtal Mainnet           | 252         |
+| Fraxtal Testnet           | 2522        |
+| Gnosis                    | 100         |
+| HyperEVM                  | 999         |
+| Linea Mainnet             | 59144       |
+| Linea Sepolia Testnet     | 59141       |
+| Mantle Mainnet            | 5000        |
+| Mantle Sepolia Testnet    | 5003        |
+| Memecore Mainnet          | 4352        |
+| Memecore Testnet          | 43521       |
+| Moonbase Alpha Testnet    | 1287        |
+| Monad Testnet             | 10143       |
+| Moonbeam Mainnet          | 1284        |
+| Moonriver Mainnet         | 1285        |
+| OP Mainnet                | 10          |
+| OP Sepolia Testnet        | 11155420    |
+| Polygon Amoy Testnet      | 80002       |
+| Polygon Mainnet           | 137         |
+| Katana Mainnet            | 747474      |
+| Sei Mainnet               | 1329        |
+| Sei Testnet               | 1328        |
+| Scroll Mainnet            | 534352      |
+| Scroll Sepolia Testnet    | 534351      |
+| Sonic Blaze Testnet       | 57054       |
+| Sonic Mainnet             | 146         |
+| Sophon Mainnet            | 50104       |
+| Sophon Sepolia Testnet    | 531050104   |
+| Swellchain Mainnet        | 1923        |
+| Swellchain Testnet        | 1924        |
+| Taiko Hekla L2 Testnet    | 167009      |
+| Taiko Mainnet             | 167000      |
+| Unichain Mainnet          | 130         |
+| Unichain Sepolia Testnet  | 1301        |
+| World Mainnet             | 480         |
+| World Sepolia Testnet     | 4801        |
+| Wemix Mainnet             | 1111        |
+| Wemix Testnet             | 1112        |
+| Xai Mainnet               | 660279      |
+| Xai Sepolia Testnet       | 37714555429 |
+| XDC Apothem Testnet       | 51          |
+| XDC Mainnet               | 50          |
+| zkSync Mainnet            | 324         |
+| zkSync Sepolia Testnet    | 300         |
+| opBNB Mainnet             | 204         |
+| opBNB Testnet             | 5611        |
