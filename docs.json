@@ -20,7 +20,8 @@
                 "group": "Get Started",
                 "pages": [
                   "introduction",
-                  "development"
+                  "development",
+                  "v2-migration"
                 ]
               },
               {
@@ -45,7 +46,8 @@
               {
                 "group": "Contract",
                 "pages": [
-                  "api-reference/endpoint/etherscan-transactions"                ]
+                  "api-reference/endpoint/etherscan-transactions"
+                ]
               }
             ]
           },
@@ -88,7 +90,7 @@
               }
             ]
           },
-           {
+          {
             "tab": "API Reference",
             "groups": [
               {
@@ -100,7 +102,8 @@
               {
                 "group": "Contract",
                 "pages": [
-                  "api-reference/endpoint/etherscan-transactions-137"                ]
+                  "api-reference/endpoint/etherscan-transactions-137"
+                ]
               }
             ]
           }

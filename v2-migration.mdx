@@ -1,0 +1,63 @@
+# V2 Migration
+
+As of August 15th 2025, we've deprecated the legacy V1 endpoints in favor or the new Etherscan API V2, our latest multichain update.&#x20;
+
+To reiterate, all methods including balances, source code, remain accessible (and better if you're querying multiple chains :rainbow:) once you use the new V2 format.
+
+A legacy V1 endpoint that needs to be migrated looks like these
+
+```
+https://api.etherscan.io/api
+https://api.basescan.org/api
+https://api.polygonscan.com/api
+https://api.bscscan.com/api
+https://api.apescan.io/api
+```
+
+You'd also know if you get a deprecation error message
+
+```json
+{
+   "status":"0",
+   "message":"NOTOK",
+   "result":"You are using a deprecated V1 endpoint, switch to Etherscan API V2."
+}
+```
+
+A word about tooling that uses the APIs, such as Hardhat/Foundry/Remix have all migrated. If you're seeing this error, make sure to use an Etherscan API Key.
+
+## 1. Create an Etherscan account
+
+[**Sign up**](https://etherscan.io/register) if you don't have an account of if you were using other explorers like BaseScan/BscScan/Polygonscan etc.&#x20;
+
+## 2. Create an Etherscan API Key
+
+Under your Etherscan [**API dashboard**](https://etherscan.io/apidashboard), create a new key
+
+## 3. Using Your Existing Calls
+
+All V1 endpoints are backwards compatible, so if you had&#x20;
+
+```
+https://api.etherscan.io/api?&action=balance&apikey=YourEtherscanApiKeyToken
+```
+
+You only need to add the `/v2` and a `chainid`
+
+```
+https://api.etherscan.io/v2/api?chainid=1&action=balance&apikey=YourEtherscanApiKeyToken
+```
+
+## 4. Using Your Existing Calls From Other Explorers
+
+All V1 endpoints from other explorers such as Basescan/BscScan/Polygonscan etc are backwards compatible, so if you had
+
+```
+https://api.polygonscan.com/api?&action=balance&apikey=YourPolygoncsanApiKeyToken
+```
+
+You only need to use an Etherscan `/v2` path, include a `chainid` and use your Etherscan API Key.
+
+```
+https://api.etherscan.io/v2/api?chainid=1&action=balance&apikey=YourEtherscanApiKeyToken
+```
