@@ -1,0 +1,41 @@
+---
+title: 'Get Beacon Chain Withdrawals by Address and Block Range'
+api: 'GET /v2/api'
+keywords: ['beacon withdrawals', 'txsBeaconWithdrawal']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns beacon chain withdrawals made to an address" />
+
+  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
+    Chain ID of the network {chain}.
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Module name (set to 'account').
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="txsBeaconWithdrawal">
+    Action type (set to 'txsBeaconWithdrawal').
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0xB9D7934878B5FB9610B3fE8A5e441e8fad7E293f">
+    Address to check for beacon withdrawals.
+  </ParamField>
+  <ParamField query="startblock" type="integer" initialValue="0">
+    Starting block number to search from.
+  </ParamField>
+  <ParamField query="endblock" type="integer" initialValue="99999999">
+    Ending block number to search to.
+  </ParamField>
+  <ParamField query="page" type="integer" initialValue="1">
+    Page number for pagination.
+  </ParamField>
+  <ParamField query="offset" type="integer" initialValue="100">
+    Number of records per page.
+  </ParamField>
+  <ParamField query="sort" type="string" initialValue="asc">
+    Sort order ("asc" or "desc").
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key.
+  </ParamField>

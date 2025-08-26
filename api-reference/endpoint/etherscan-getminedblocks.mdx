@@ -1,0 +1,35 @@
+---
+title: 'Get list of Blocks Validated by Address'
+api: 'GET /v2/api'
+keywords: ['mined blocks', 'getminedblocks']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns blocks validated by an address" />
+
+  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
+    Chain ID of the network {chain}.
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Module name (set to 'account').
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="getminedblocks">
+    Action type (set to 'getminedblocks').
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0x9dd134d14d1e65f84b706d6f205cd5b1cd03a46b">
+    Validator address to query.
+  </ParamField>
+  <ParamField query="blocktype" type="string" initialValue="blocks">
+    Block type ('blocks' or 'uncles').
+  </ParamField>
+  <ParamField query="page" type="integer" initialValue="1">
+    Page number for pagination.
+  </ParamField>
+  <ParamField query="offset" type="integer" initialValue="10">
+    Number of records per page.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key.
+  </ParamField>

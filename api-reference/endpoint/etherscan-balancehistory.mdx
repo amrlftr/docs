@@ -1,0 +1,29 @@
+---
+title: 'Get Historical Ether Balance for a Single Address By BlockNo'
+api: 'GET /v2/api'
+keywords: ['historical balance', 'balance history']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the balance of an address at a given block height" pro={true} />
+
+  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
+    Chain ID of the network {chain}.
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Module name (set to 'account').
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="balancehistory">
+    Action type (set to 'balancehistory').
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae">
+    Address to query.
+  </ParamField>
+  <ParamField query="blockno" type="integer" initialValue="8000000">
+    Block number to check balance at.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key.
+  </ParamField>
