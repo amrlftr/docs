@@ -1,0 +1,26 @@
+---
+title: "Get 'Internal Transactions' by Transaction Hash"
+api: 'GET /v2/api'
+keywords: ['internal transactions', 'txlistinternal txhash']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns internal transactions within a transaction" />
+
+  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
+    Chain ID of the network {chain}.
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Module name (set to 'account').
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="txlistinternal">
+    Action type (set to 'txlistinternal').
+  </ParamField>
+  <ParamField query="txhash" type="string" initialValue="0x40eb908387324f2b575b4879cd9d7188f69c8fc9d87c901b9e2daaea4b442170">
+    Transaction hash to check for internal transactions.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key.
+  </ParamField>

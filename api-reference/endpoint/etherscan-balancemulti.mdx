@@ -1,0 +1,29 @@
+---
+title: 'Get Ether Balance for Multiple Addresses'
+api: 'GET /v2/api'
+keywords: ['Ether balance', 'multi address balance']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the balances of multiple addresses" />
+
+  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
+    Chain ID of the network {chain}.
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Module name (set to 'account').
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="balancemulti">
+    Action type (set to 'balancemulti').
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a,0x63a9975ba31b0b9626b34300f7f627147df1f526,0x198ef1ec325a96cc354c7266a038be8b5c558f67">
+    Addresses to query, separated by commas.
+  </ParamField>
+  <ParamField query="tag" type="string" initialValue="latest">
+    Block tag ("earliest", "pending", or "latest").
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key.
+  </ParamField>

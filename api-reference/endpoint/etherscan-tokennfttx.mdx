@@ -1,0 +1,44 @@
+---
+title: "Get a list of 'ERC721 - Token Transfer Events' by Address"
+api: 'GET /v2/api'
+keywords: ['ERC721 transfers', 'tokennfttx']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns ERC-721 token transfers for an address" />
+
+  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
+    Chain ID of the network {chain}.
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Module name (set to 'account').
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="tokennfttx">
+    Action type (set to 'tokennfttx').
+  </ParamField>
+  <ParamField query="contractaddress" type="string" initialValue="0x06012c8cf97bead5deae237070f9587f8e7a266d">
+    Token contract address.
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0x6975be450864c02b4613023c2152ee0743572325">
+    Address to filter token transfers by.
+  </ParamField>
+  <ParamField query="page" type="integer" initialValue="1">
+    Page number for pagination.
+  </ParamField>
+  <ParamField query="offset" type="integer" initialValue="100">
+    Number of transactions per page.
+  </ParamField>
+  <ParamField query="startblock" type="integer" initialValue="0">
+    Starting block number to search from.
+  </ParamField>
+  <ParamField query="endblock" type="integer" initialValue="27025780">
+    Ending block number to search to.
+  </ParamField>
+  <ParamField query="sort" type="string" initialValue="asc">
+    Sort order ("asc" or "desc").
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key.
+  </ParamField>
