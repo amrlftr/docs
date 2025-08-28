@@ -1,0 +1,32 @@
+---
+title: "Get Address ERC20 Token Holding"
+api: "GET /v2/api"
+keywords: ["address token balance", "erc20 holdings"]
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the ERC-20 tokens and amounts held by an address" pro={true} />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Set to `account` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="addresstokenbalance">
+    Set to `addresstokenbalance` for this endpoint.
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0x983e3660c0bE01991785F80f266A84B911ab59b0">
+    Address to check for token holdings.
+  </ParamField>
+  <ParamField query="page" type="integer" initialValue="1">
+    Page number for pagination.
+  </ParamField>
+  <ParamField query="offset" type="integer" initialValue="100">
+    Number of records per page.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

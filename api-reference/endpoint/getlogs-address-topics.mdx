@@ -1,0 +1,47 @@
+---
+title: "Get Event Logs by Address and Topics"
+api: "GET /v2/api"
+keywords: ["event logs", "address topics"]
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns event logs from an address filtered by topics and block range" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="logs">
+    Set to `logs` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="getLogs">
+    Set to `getLogs` for this endpoint.
+  </ParamField>
+  <ParamField query="fromBlock" type="integer" initialValue="15073139">
+    Starting block number to search from.
+  </ParamField>
+  <ParamField query="toBlock" type="integer" initialValue="15074139">
+    Ending block number to search to.
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0x59728544b08ab483533076417fbbb2fd0b17ce3a">
+    Address to check for logs.
+  </ParamField>
+  <ParamField query="topic0" type="string" initialValue="0x27c4f0403323142b599832f26acd21c74a9e5b809f2215726e244a4ac588cd7d">
+    First topic to filter by, such as an event signature.
+  </ParamField>
+  <ParamField query="topic0_1_opr" type="string" initialValue="and">
+    Topic operator between `topic0` and `topic1`, either `and` or `or`.
+  </ParamField>
+  <ParamField query="topic1" type="string" initialValue="0x00000000000000000000000023581767a106ae21c074b2276d25e5c3e136a68b">
+    Second topic to filter by.
+  </ParamField>
+  <ParamField query="page" type="integer" initialValue="1">
+    Page number for pagination.
+  </ParamField>
+  <ParamField query="offset" type="integer" initialValue="1000">
+    Number of records per page. Limited to 1000 records per query; use the `page` parameter for subsequent records.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

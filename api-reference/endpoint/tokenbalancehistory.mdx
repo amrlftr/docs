@@ -1,0 +1,32 @@
+---
+title: "Get Historical ERC20-Token Account Balance by BlockNo"
+api: "GET /v2/api"
+keywords: ["token balance history", "erc20 balance history"]
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the balance of an ERC-20 token for an address at a specific block" pro={true} />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="account">
+    Set to `account` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="tokenbalancehistory">
+    Set to `tokenbalancehistory` for this endpoint.
+  </ParamField>
+  <ParamField query="contractaddress" type="string" initialValue="0x57d90b64a1a57749b0f932f1a3395792e12e7055">
+    Contract address of the ERC-20 token.
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0xe04f27eb70e025b78871a2ad7eabe85e61212761">
+    Address to check for balance.
+  </ParamField>
+  <ParamField query="blockno" type="integer" initialValue="8000000">
+    Block number to check balance for.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

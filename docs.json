@@ -103,9 +103,56 @@
                   "api-reference/endpoint/ethgettransactionreceipt",
                   "api-reference/endpoint/ethcall",
                   "api-reference/endpoint/ethgetcode",
-                  "api-reference/endpoint/ethgetstorageat",
-                  "api-reference/endpoint/ethgasprice",
-                  "api-reference/endpoint/ethestimategas"
+                "api-reference/endpoint/ethgetstorageat",
+                "api-reference/endpoint/ethgasprice",
+                "api-reference/endpoint/ethestimategas"
+              ]
+              },
+              {
+                "group": "Logs",
+                "pages": [
+                  "api-reference/endpoint/getlogs",
+                  "api-reference/endpoint/getlogs-topics",
+                  "api-reference/endpoint/getlogs-address-topics"
+                ]
+              },
+              {
+                "group": "Stats",
+                "pages": [
+                  "api-reference/endpoint/ethsupply",
+                  "api-reference/endpoint/ethsupply2",
+                  "api-reference/endpoint/ethprice",
+                  "api-reference/endpoint/chainsize",
+                  "api-reference/endpoint/nodecount",
+                  "api-reference/endpoint/dailytxnfee",
+                  "api-reference/endpoint/dailynewaddress",
+                  "api-reference/endpoint/dailynetutilization",
+                  "api-reference/endpoint/dailyavghashrate",
+                  "api-reference/endpoint/dailytx",
+                  "api-reference/endpoint/dailyavgnetdifficulty",
+                  "api-reference/endpoint/ethdailyprice"
+                ]
+              },
+              {
+                "group": "Transactions",
+                "pages": [
+                  "api-reference/endpoint/getstatus",
+                  "api-reference/endpoint/gettxreceiptstatus"
+                ]
+              },
+              {
+                "group": "Tokens",
+                "pages": [
+                  "api-reference/endpoint/tokensupply",
+                  "api-reference/endpoint/tokenbalance",
+                  "api-reference/endpoint/tokensupplyhistory",
+                  "api-reference/endpoint/tokenbalancehistory",
+                  "api-reference/endpoint/tokenholderlist",
+                  "api-reference/endpoint/tokenholdercount",
+                  "api-reference/endpoint/tokeninfo",
+                  "api-reference/endpoint/addresstokenbalance",
+                  "api-reference/endpoint/addresstokennftbalance",
+                  "api-reference/endpoint/addresstokennftinventory"
                 ]
               }
             ]
