@@ -1,0 +1,24 @@
+---
+title: 'Get Gas Oracle'
+description: 'Get current gas price recommendations.'
+api: 'GET /v2/api'
+keywords: ['gas oracle', 'gas prices']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the current safe, proposed, and fast gas prices" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="gastracker">
+    Set to `gastracker` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="gasoracle">
+    Set to `gasoracle` for this endpoint.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

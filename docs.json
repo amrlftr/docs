@@ -65,6 +65,48 @@
                   "api-reference/endpoint/dailyavgblocktime",
                   "api-reference/endpoint/dailyuncleblkcount"
                 ]
+              },
+              {
+                "group": "Contracts",
+                "pages": [
+                  "api-reference/endpoint/getabi",
+                  "api-reference/endpoint/getsourcecode",
+                  "api-reference/endpoint/getcontractcreation",
+                  "api-reference/endpoint/verifysourcecode",
+                  "api-reference/endpoint/verifyvyper",
+                  "api-reference/endpoint/checkverifystatus",
+                  "api-reference/endpoint/verifyproxycontract",
+                  "api-reference/endpoint/checkproxyverification"
+                ]
+              },
+              {
+                "group": "Gas Tracker",
+                "pages": [
+                  "api-reference/endpoint/gasestimate",
+                  "api-reference/endpoint/gasoracle",
+                  "api-reference/endpoint/dailyavggaslimit",
+                  "api-reference/endpoint/dailygasused",
+                  "api-reference/endpoint/dailyavggasprice"
+                ]
+              },
+              {
+                "group": "Geth/Parity Proxy",
+                "pages": [
+                  "api-reference/endpoint/ethblocknumber",
+                  "api-reference/endpoint/ethgetblockbynumber",
+                  "api-reference/endpoint/ethgetunclebyblocknumberandindex",
+                  "api-reference/endpoint/ethgetblocktransactioncountbynumber",
+                  "api-reference/endpoint/ethgettransactionbyhash",
+                  "api-reference/endpoint/ethgettransactionbyblocknumberandindex",
+                  "api-reference/endpoint/ethgettransactioncount",
+                  "api-reference/endpoint/ethsendrawtransaction",
+                  "api-reference/endpoint/ethgettransactionreceipt",
+                  "api-reference/endpoint/ethcall",
+                  "api-reference/endpoint/ethgetcode",
+                  "api-reference/endpoint/ethgetstorageat",
+                  "api-reference/endpoint/ethgasprice",
+                  "api-reference/endpoint/ethestimategas"
+                ]
               }
             ]
           },
