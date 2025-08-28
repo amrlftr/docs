@@ -1,0 +1,30 @@
+---
+title: 'Get Block Number by Timestamp'
+api: 'GET /v2/api'
+keywords: ['block number', 'timestamp']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the block number mined at a given timestamp" />
+
+<ParamField query="chainid" type="string" initialValue="1">
+  Chain ID you query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+</ParamField>
+<ParamField query="module" type="string" initialValue="block">
+  Set to `block` for this endpoint.
+</ParamField>
+<ParamField query="action" type="string" initialValue="getblocknobytime">
+  Set to `getblocknobytime` for this endpoint.
+</ParamField>
+<ParamField query="timestamp" type="integer" initialValue="1578638524">
+  Unix timestamp in seconds.
+</ParamField>
+<ParamField query="closest" type="string" initialValue="before">
+  Closest available block to the provided timestamp, either `before` or `after`.
+</ParamField>
+<ParamField query="apikey" type="string">
+  Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+</ParamField>
+
