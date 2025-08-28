@@ -40,30 +40,30 @@
               {
                 "group": "Account",
                 "pages": [
-                  "api-reference/endpoint/etherscan-balance",
-                  "api-reference/endpoint/etherscan-balancehistory",
-                  "api-reference/endpoint/etherscan-txlist",
-                  "api-reference/endpoint/etherscan-tokentx",
-                  "api-reference/endpoint/etherscan-tokennfttx",
-                  "api-reference/endpoint/etherscan-token1155tx",
-                  "api-reference/endpoint/etherscan-txlistinternal",
-                  "api-reference/endpoint/etherscan-txlistinternal-blockrange",
-                  "api-reference/endpoint/etherscan-txlistinternal-txhash",
-                  "api-reference/endpoint/etherscan-getminedblocks",
-                  "api-reference/endpoint/etherscan-txsbeaconwithdrawal"
+                  "api-reference/endpoint/balance",
+                  "api-reference/endpoint/balancehistory",
+                  "api-reference/endpoint/txlist",
+                  "api-reference/endpoint/tokentx",
+                  "api-reference/endpoint/tokennfttx",
+                  "api-reference/endpoint/token1155tx",
+                  "api-reference/endpoint/txlistinternal",
+                  "api-reference/endpoint/txlistinternal-blockrange",
+                  "api-reference/endpoint/txlistinternal-txhash",
+                  "api-reference/endpoint/getminedblocks",
+                  "api-reference/endpoint/txsbeaconwithdrawal"
                 ]
               },
               {
                 "group": "Blocks",
                 "pages": [
-                  "api-reference/endpoint/etherscan-getblockreward",
-                  "api-reference/endpoint/etherscan-getblockcountdown",
-                  "api-reference/endpoint/etherscan-getblocknobytime",
-                  "api-reference/endpoint/etherscan-dailyavgblocksize",
-                  "api-reference/endpoint/etherscan-dailyblkcount",
-                  "api-reference/endpoint/etherscan-dailyblockrewards",
-                  "api-reference/endpoint/etherscan-dailyavgblocktime",
-                  "api-reference/endpoint/etherscan-dailyuncleblkcount"
+                  "api-reference/endpoint/getblockreward",
+                  "api-reference/endpoint/getblockcountdown",
+                  "api-reference/endpoint/getblocknobytime",
+                  "api-reference/endpoint/dailyavgblocksize",
+                  "api-reference/endpoint/dailyblkcount",
+                  "api-reference/endpoint/dailyblockrewards",
+                  "api-reference/endpoint/dailyavgblocktime",
+                  "api-reference/endpoint/dailyuncleblkcount"
                 ]
               }
             ]
@@ -74,7 +74,7 @@
               {
                 "group": "Endpoints",
                 "pages": [
-                  "api-reference/endpoint/etherscan-nametag"
+                  "api-reference/endpoint/nametag"
                 ]
               }
             ]
