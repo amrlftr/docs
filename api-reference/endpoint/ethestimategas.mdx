@@ -1,0 +1,39 @@
+---
+title: 'eth_estimateGas'
+description: 'Estimate the gas required for a transaction.'
+api: 'GET /v2/api'
+keywords: ['eth_estimateGas', 'gas estimation']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Estimates the gas necessary for a transaction" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="proxy">
+    Set to `proxy` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="eth_estimateGas">
+    Set to `eth_estimateGas` for this endpoint.
+  </ParamField>
+  <ParamField query="data" type="string" initialValue="0x4e71d92d">
+    Hash of the method signature and encoded parameters.
+  </ParamField>
+  <ParamField query="to" type="string" initialValue="0xf0160428a8552ac9bb7e050d90eeade4ddd52843">
+    The address to interact with.
+  </ParamField>
+  <ParamField query="value" type="string" initialValue="0xff22">
+    Value sent in this transaction, in hex.
+  </ParamField>
+  <ParamField query="gasPrice" type="string" initialValue="0x51da038cc">
+    Gas price in wei.
+  </ParamField>
+  <ParamField query="gas" type="string" initialValue="0x5f5e0ff">
+    Gas limit provided for the transaction, in hex.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

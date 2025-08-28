@@ -1,0 +1,33 @@
+---
+title: 'eth_getStorageAt'
+description: 'Get the value at a storage position.'
+api: 'GET /v2/api'
+keywords: ['eth_getStorageAt', 'storage value']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the value from a storage position at a given address" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="proxy">
+    Set to `proxy` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="eth_getStorageAt">
+    Set to `eth_getStorageAt` for this endpoint.
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0x6e03d9cce9d60f3e9f2597e13cd4c54c55330cfd">
+    The address to query.
+  </ParamField>
+  <ParamField query="position" type="string" initialValue="0x0">
+    Storage position in hex.
+  </ParamField>
+  <ParamField query="tag" type="string" initialValue="latest">
+    Use `latest`, `earliest`, `pending`, or a block number in hex.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

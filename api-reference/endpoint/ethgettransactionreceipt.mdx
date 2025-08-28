@@ -1,0 +1,27 @@
+---
+title: 'eth_getTransactionReceipt'
+description: 'Get the receipt of a transaction by hash.'
+api: 'GET /v2/api'
+keywords: ['eth_getTransactionReceipt', 'transaction receipt']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the receipt of a transaction by hash" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="proxy">
+    Set to `proxy` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="eth_getTransactionReceipt">
+    Set to `eth_getTransactionReceipt` for this endpoint.
+  </ParamField>
+  <ParamField query="txhash" type="string" initialValue="0xadb8aec59e80db99811ac4a0235efa3e45da32928bcff557998552250fa672eb">
+    The transaction hash to query.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

@@ -1,0 +1,27 @@
+---
+title: 'eth_getTransactionByHash'
+description: 'Get transaction details by hash.'
+api: 'GET /v2/api'
+keywords: ['eth_getTransactionByHash', 'transaction details']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns information about a transaction by hash" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="proxy">
+    Set to `proxy` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="eth_getTransactionByHash">
+    Set to `eth_getTransactionByHash` for this endpoint.
+  </ParamField>
+  <ParamField query="txhash" type="string" initialValue="0xbc78ab8a9e9a0bca7d0321a27b2c03addeae08ba81ea98b03cd3dd237eabed44">
+    The transaction hash to query.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

@@ -1,0 +1,27 @@
+---
+title: 'eth_getBlockTransactionCountByNumber'
+description: 'Get the number of transactions in a block.'
+api: 'GET /v2/api'
+keywords: ['eth_getBlockTransactionCountByNumber', 'transaction count']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the number of transactions in a block" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="proxy">
+    Set to `proxy` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="eth_getBlockTransactionCountByNumber">
+    Set to `eth_getBlockTransactionCountByNumber` for this endpoint.
+  </ParamField>
+  <ParamField query="tag" type="string" initialValue="0x10FB78">
+    Block number in hex format.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

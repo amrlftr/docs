@@ -1,0 +1,27 @@
+---
+title: 'Check Proxy Contract Verification Status'
+description: 'Check the status of a proxy contract verification.'
+api: 'GET /v2/api'
+keywords: ['proxy verification', 'checkproxyverification']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Checks the status of a proxy contract verification" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="contract">
+    Set to `contract` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="checkproxyverification">
+    Set to `checkproxyverification` for this endpoint.
+  </ParamField>
+  <ParamField query="guid" type="string" initialValue="gwgrrnfy56zf6vc1fljuejwg6pelnc5yns6fg6y2i6zfpgzquz">
+    The GUID received from the proxy verification request.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>
