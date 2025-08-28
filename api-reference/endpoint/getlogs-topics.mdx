@@ -1,0 +1,65 @@
+---
+title: "Get Event Logs by Topics"
+api: "GET /v2/api"
+keywords: ["event logs", "topics"]
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns event logs in a block range filtered by topics" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="logs">
+    Set to `logs` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="getLogs">
+    Set to `getLogs` for this endpoint.
+  </ParamField>
+  <ParamField query="fromBlock" type="integer" initialValue="12878196">
+    Starting block number to search from.
+  </ParamField>
+  <ParamField query="toBlock" type="integer" initialValue="12879196">
+    Ending block number to search to.
+  </ParamField>
+  <ParamField query="topic0" type="string" initialValue="0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef">
+    First topic to filter by, such as an event signature.
+  </ParamField>
+  <ParamField query="topic0_1_opr" type="string" initialValue="and">
+    Topic operator between `topic0` and `topic1`, either `and` or `or`.
+  </ParamField>
+  <ParamField query="topic1" type="string" initialValue="0x0000000000000000000000000000000000000000000000000000000000000000">
+    Second topic to filter by.
+  </ParamField>
+  <ParamField query="topic1_2_opr" type="string" initialValue="and">
+    Topic operator between `topic1` and `topic2`, either `and` or `or`.
+  </ParamField>
+  <ParamField query="topic2" type="string" initialValue="0x000000000000000000000000c45a4b3b698f21f88687548e7f5a80df8b99d93d">
+    Third topic to filter by.
+  </ParamField>
+  <ParamField query="topic2_3_opr" type="string" initialValue="and">
+    Topic operator between `topic2` and `topic3`, either `and` or `or`.
+  </ParamField>
+  <ParamField query="topic3" type="string" initialValue="0x00000000000000000000000000000000000000000000000000000000000000b5">
+    Fourth topic to filter by.
+  </ParamField>
+  <ParamField query="topic0_2_opr" type="string" initialValue="and">
+    Topic operator between `topic0` and `topic2`, either `and` or `or`.
+  </ParamField>
+  <ParamField query="topic0_3_opr" type="string" initialValue="and">
+    Topic operator between `topic0` and `topic3`, either `and` or `or`.
+  </ParamField>
+  <ParamField query="topic1_3_opr" type="string" initialValue="and">
+    Topic operator between `topic1` and `topic3`, either `and` or `or`.
+  </ParamField>
+  <ParamField query="page" type="integer" initialValue="1">
+    Page number for pagination.
+  </ParamField>
+  <ParamField query="offset" type="integer" initialValue="1000">
+    Number of records per page. Limited to 1000 records per query; use the `page` parameter for subsequent records.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

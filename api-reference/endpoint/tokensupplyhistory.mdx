@@ -1,0 +1,29 @@
+---
+title: "Get Historical ERC20-Token TotalSupply by ContractAddress & BlockNo"
+api: "GET /v2/api"
+keywords: ["token supply history", "erc20 supply history"]
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the amount of an ERC-20 token in circulation at a specific block" pro={true} />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="stats">
+    Set to `stats` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="tokensupplyhistory">
+    Set to `tokensupplyhistory` for this endpoint.
+  </ParamField>
+  <ParamField query="contractaddress" type="string" initialValue="0x57d90b64a1a57749b0f932f1a3395792e12e7055">
+    Contract address of the ERC-20 token.
+  </ParamField>
+  <ParamField query="blockno" type="integer" initialValue="8000000">
+    Block number to check total supply for.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

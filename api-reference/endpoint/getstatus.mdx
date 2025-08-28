@@ -1,0 +1,26 @@
+---
+title: "Check Contract Execution Status"
+api: "GET /v2/api"
+keywords: ["contract execution status", "getstatus"]
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the status code of a contract execution" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="transaction">
+    Set to `transaction` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="getstatus">
+    Set to `getstatus` for this endpoint.
+  </ParamField>
+  <ParamField query="txhash" type="string" initialValue="0x15f8e5ea1079d9a0bb04a4c58ae5fe7654b5b2b4463375ff7ffb490aa0032f3a">
+    Transaction hash to check the execution status.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>

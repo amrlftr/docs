@@ -1,0 +1,38 @@
+---
+title: "Get Event Logs by Address"
+api: "GET /v2/api"
+keywords: ["event logs", "address logs"]
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns event logs from an address with optional block range filters" />
+
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+  </ParamField>
+  <ParamField query="module" type="string" initialValue="logs">
+    Set to `logs` for this endpoint.
+  </ParamField>
+  <ParamField query="action" type="string" initialValue="getLogs">
+    Set to `getLogs` for this endpoint.
+  </ParamField>
+  <ParamField query="address" type="string" initialValue="0xbd3531da5cf5857e7cfaa92426877b022e612cf8">
+    Address to check for logs.
+  </ParamField>
+  <ParamField query="fromBlock" type="integer" initialValue="12878196">
+    Starting block number to search from.
+  </ParamField>
+  <ParamField query="toBlock" type="integer" initialValue="12878196">
+    Ending block number to search to.
+  </ParamField>
+  <ParamField query="page" type="integer" initialValue="1">
+    Page number for pagination.
+  </ParamField>
+  <ParamField query="offset" type="integer" initialValue="1000">
+    Number of records per page. Limited to 1000 records per query; use the `page` parameter for subsequent records.
+  </ParamField>
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>
