@@ -1,0 +1,81 @@
+---
+title: 'Get Daily Block Count and Rewards'
+api: 'GET /v2/api'
+keywords: ['daily block count', 'block rewards']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the number of blocks mined daily and the amount of block rewards" pro={true} />
+
+<ParamField query="chainid" type="string" initialValue="1">
+  Chain ID you query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+</ParamField>
+<ParamField query="module" type="string" initialValue="stats">
+  Set to `stats` for this endpoint.
+</ParamField>
+<ParamField query="action" type="string" initialValue="dailyblkcount">
+  Set to `dailyblkcount` for this endpoint.
+</ParamField>
+<ParamField query="startdate" type="string" initialValue="2019-02-01">
+  Starting date in `yyyy-MM-dd` format.
+</ParamField>
+<ParamField query="enddate" type="string" initialValue="2019-02-28">
+  Ending date in `yyyy-MM-dd` format.
+</ParamField>
+<ParamField query="sort" type="string" initialValue="asc">
+  Sort order, either `asc` or `desc`.
+</ParamField>
+<ParamField query="apikey" type="string">
+  Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+</ParamField>
+
+<RequestExample>
+https://api.etherscan.io/v2/api?chainid=1&module=stats&action=dailyblkcount&startdate=2019-02-01&enddate=2019-02-28&sort=asc&apikey=YourApiKeyToken
+</RequestExample>
+
+<ResponseField name="status" type="string">
+  `1` for success, `0` for errors.
+</ResponseField>
+<ResponseField name="message" type="string">
+  Description of the response status.
+</ResponseField>
+<ResponseField name="result" type="array">
+  <Expandable title="Daily block count">
+    <ResponseField name="UTCDate" type="string">Date in UTC.</ResponseField>
+    <ResponseField name="unixTimeStamp" type="string">Unix timestamp.</ResponseField>
+    <ResponseField name="blockCount" type="integer">Number of blocks mined.</ResponseField>
+    <ResponseField name="blockRewards_Eth" type="string">Block rewards in Ether.</ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseExample title="Success">
+{
+  "status":"1",
+  "message":"OK",
+  "result":[
+    {
+      "UTCDate":"2019-02-01",
+      "unixTimeStamp":"1548979200",
+      "blockCount":4848,
+      "blockRewards_Eth":"14929.464690870590355682"
+    },
+    {
+      "UTCDate":"2019-02-28",
+      "unixTimeStamp":"1551312000",
+      "blockCount":4366,
+      "blockRewards_Eth":"12808.485512162356907132"
+    }
+  ]
+}
+</ResponseExample>
+
+<ResponseExample title="Error">
+{
+  "status":"0",
+  "message":"NOTOK",
+  "result":"Max rate limit reached"
+}
+</ResponseExample>
+

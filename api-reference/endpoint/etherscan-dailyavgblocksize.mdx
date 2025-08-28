@@ -1,0 +1,78 @@
+---
+title: 'Get Daily Average Block Size'
+api: 'GET /v2/api'
+keywords: ['average block size', 'daily stats']
+---
+
+import { chain } from '/snippets/custom-variables.mdx';
+import { CreditChip } from '/snippets/jsx-snippet.jsx';
+
+<CreditChip description="Returns the daily average block size within a date range" pro={true} />
+
+<ParamField query="chainid" type="string" initialValue="1">
+  Chain ID you query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
+</ParamField>
+<ParamField query="module" type="string" initialValue="stats">
+  Set to `stats` for this endpoint.
+</ParamField>
+<ParamField query="action" type="string" initialValue="dailyavgblocksize">
+  Set to `dailyavgblocksize` for this endpoint.
+</ParamField>
+<ParamField query="startdate" type="string" initialValue="2019-02-01">
+  Starting date in `yyyy-MM-dd` format.
+</ParamField>
+<ParamField query="enddate" type="string" initialValue="2019-02-28">
+  Ending date in `yyyy-MM-dd` format.
+</ParamField>
+<ParamField query="sort" type="string" initialValue="asc">
+  Sort order, either `asc` or `desc`.
+</ParamField>
+<ParamField query="apikey" type="string">
+  Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+</ParamField>
+
+<RequestExample>
+https://api.etherscan.io/v2/api?chainid=1&module=stats&action=dailyavgblocksize&startdate=2019-02-01&enddate=2019-02-28&sort=asc&apikey=YourApiKeyToken
+</RequestExample>
+
+<ResponseField name="status" type="string">
+  `1` for success, `0` for errors.
+</ResponseField>
+<ResponseField name="message" type="string">
+  Description of the response status.
+</ResponseField>
+<ResponseField name="result" type="array">
+  <Expandable title="Daily average block size">
+    <ResponseField name="UTCDate" type="string">Date in UTC.</ResponseField>
+    <ResponseField name="unixTimeStamp" type="string">Unix timestamp.</ResponseField>
+    <ResponseField name="blockSize_bytes" type="integer">Average block size in bytes.</ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseExample title="Success">
+{
+  "status":"1",
+  "message":"OK",
+  "result":[
+    {
+      "UTCDate":"2019-02-01",
+      "unixTimeStamp":"1548979200",
+      "blockSize_bytes":20373
+    },
+    {
+      "UTCDate":"2019-02-28",
+      "unixTimeStamp":"1551312000",
+      "blockSize_bytes":25117
+    }
+  ]
+}
+</ResponseExample>
+
+<ResponseExample title="Error">
+{
+  "status":"0",
+  "message":"NOTOK",
+  "result":"Max rate limit reached"
+}
+</ResponseExample>
+
