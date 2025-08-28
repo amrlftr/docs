@@ -52,19 +52,6 @@
                   "api-reference/endpoint/etherscan-getminedblocks",
                   "api-reference/endpoint/etherscan-txsbeaconwithdrawal"
                 ]
-              },
-              {
-                "group": "Blocks",
-                "pages": [
-                  "api-reference/endpoint/etherscan-getblockreward",
-                  "api-reference/endpoint/etherscan-getblockcountdown",
-                  "api-reference/endpoint/etherscan-getblocknobytime",
-                  "api-reference/endpoint/etherscan-dailyavgblocksize",
-                  "api-reference/endpoint/etherscan-dailyblkcount",
-                  "api-reference/endpoint/etherscan-dailyblockrewards",
-                  "api-reference/endpoint/etherscan-dailyavgblocktime",
-                  "api-reference/endpoint/etherscan-dailyuncleblkcount"
-                ]
               }
             ]
           },
