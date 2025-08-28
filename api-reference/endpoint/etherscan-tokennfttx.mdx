@@ -1,5 +1,5 @@
 ---
-title: "Get a list of 'ERC721 - Token Transfer Events' by Address"
+title: "Get ERC721 Token Transfers by Address"
 api: 'GET /v2/api'
 keywords: ['ERC721 transfers', 'tokennfttx']
 ---
@@ -9,17 +9,17 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns ERC-721 token transfers for an address" />
 
-  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
-    Chain ID of the network {chain}.
+  <ParamField query="chainid" type="string" initialValue="1" >
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
   <ParamField query="module" type="string" initialValue="account">
-    Module name (set to 'account').
+    Set to `account` for this endpoint.
   </ParamField>
   <ParamField query="action" type="string" initialValue="tokennfttx">
-    Action type (set to 'tokennfttx').
+    Set to `tokennfttx` for this endpoint.
   </ParamField>
   <ParamField query="contractaddress" type="string" initialValue="0x06012c8cf97bead5deae237070f9587f8e7a266d">
-    Token contract address.
+    The ERC721 token contract address to filter transfers by, eg `0xbd3531da5cf5857e7cfaa92426877b022e612cf8` for [Pudgy Penguins](https://etherscan.io/token/0xbd3531da5cf5857e7cfaa92426877b022e612cf8).
   </ParamField>
   <ParamField query="address" type="string" initialValue="0x6975be450864c02b4613023c2152ee0743572325">
     Address to filter token transfers by.
@@ -37,8 +37,8 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
     Ending block number to search to.
   </ParamField>
   <ParamField query="sort" type="string" initialValue="asc">
-    Sort order ("asc" or "desc").
+    Sort order either `desc` for the latest transactions first or `asc` for the oldest transactions first.
   </ParamField>
   <ParamField query="apikey" type="string">
-    Your Etherscan API key.
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

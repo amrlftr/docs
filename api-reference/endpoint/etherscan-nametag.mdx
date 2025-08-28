@@ -9,20 +9,20 @@ import { chain } from '/snippets/custom-variables.mdx';
 Returns the nametags for a given address on {chain}.
 
   <ParamField query="chainid" type="string" initialValue="somevalue" placeholder="test">
-    Chain ID of the network {chain}.
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
   <ParamField query="module" type="string" initialValue="account">
-    Module name (set to 'account').
+    Set to `account` for this endpoint
   </ParamField>
   <ParamField query="action" type="string" initialValue="balance">
-    Action type (set to 'balance').
+    Set to `balance` for this endpoint
   </ParamField>
   <ParamField query="address" type="string" initialValue="0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae">
-    Wallet address to query.
+    The address to query, like `0xfefefefefefefefefefefefefefefefefefefefe`.
   </ParamField>
   <ParamField query="tag" type="string" initialValue="latest">
-    Block tag ("earliest", "pending", or "latest").
+    Use `latest` for the last block number of the chain. Also accepts a specific block number in hex format, like `0x10d4f` up to the last 128 blocks. For historical balances, use the [Historical Balance](/api-reference/endpoint/etherscan-balancehistory) endpoint.
   </ParamField>
   <ParamField query="apikey" type="string">
-    Your Etherscan API key.
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

@@ -7,7 +7,7 @@ import { chain } from '/snippets/custom-variables.mdx';
 
 Returns the ABI for a verified contract address on {chain}.
 
-  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
+  <ParamField query="chainid" type="string" initialValue="1" >
   Chain ID of the network (e.g., 1 for Ethereum mainnet).
 </ParamField>
 <ParamField query="module" type="string" initialValue="contract">
@@ -17,8 +17,8 @@ Returns the ABI for a verified contract address on {chain}.
   Action type (set to 'getabi' to retrieve contract ABI).
 </ParamField>
 <ParamField query="address" type="string" initialValue="0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413">
-  Contract address to query.
+  Contract The address to query, like `0xfefefefefefefefefefefefefefefefefefefefe`.
 </ParamField>
 <ParamField query="apikey" type="string" placeholder="YourApiKeyToken">
-  Your Etherscan API key.
+  Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
 </ParamField>

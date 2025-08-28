@@ -9,11 +9,11 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns beacon chain withdrawals made to an address" />
 
-  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
-    Chain ID of the network {chain}.
+  <ParamField query="chainid" type="string" initialValue="1" >
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
   <ParamField query="module" type="string" initialValue="account">
-    Module name (set to 'account').
+    Set to `account` for this endpoint
   </ParamField>
   <ParamField query="action" type="string" initialValue="txsBeaconWithdrawal">
     Action type (set to 'txsBeaconWithdrawal').
@@ -34,8 +34,8 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
     Number of records per page.
   </ParamField>
   <ParamField query="sort" type="string" initialValue="asc">
-    Sort order ("asc" or "desc").
+    Sort order either `desc` for the latest transactions first or `asc` for the oldest transactions first.
   </ParamField>
   <ParamField query="apikey" type="string">
-    Your Etherscan API key.
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

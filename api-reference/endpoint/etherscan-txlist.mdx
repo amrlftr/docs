@@ -1,5 +1,5 @@
 ---
-title: "Get a list of 'Normal' Transactions By Address"
+title: "Get a list of Normal Transactions By Address"
 api: 'GET /v2/api'
 keywords: ['transactions', 'txlist']
 ---
@@ -9,17 +9,17 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns transactions performed by an address" />
 
-  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
-    Chain ID of the network {chain}.
+  <ParamField query="chainid" type="string" initialValue="1">
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
   <ParamField query="module" type="string" initialValue="account">
-    Module name (set to 'account').
+    Set to `account` for this endpoint
   </ParamField>
   <ParamField query="action" type="string" initialValue="txlist">
-    Action type (set to 'txlist').
+    Set to `txlist` for this endpoint
   </ParamField>
   <ParamField query="address" type="string" initialValue="0xc5102fE9359FD9a28f877a67E36B0F050d81a3CC">
-    Address to retrieve transactions for.
+    The address to query, like `0xfefefefefefefefefefefefefefefefefefefefe`.
   </ParamField>
   <ParamField query="startblock" type="integer" initialValue="0">
     Starting block number to search from.
@@ -34,8 +34,8 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
     Number of transactions per page.
   </ParamField>
   <ParamField query="sort" type="string" initialValue="asc">
-    Sort order ("asc" or "desc").
+    Sort order either `desc` for the latest transactions first or `asc` for the oldest transactions first.
   </ParamField>
   <ParamField query="apikey" type="string">
-    Your Etherscan API key.
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

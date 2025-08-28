@@ -1,0 +1,33 @@
+Types of Contract Verification
+
+Contract verification allows smart contract developers to prove and publish the source code of the contracts deployed on-chain.
+
+This in turn allows end users to inspect and independently verify that a particular contract function does exactly what it is intended to do by reading the contract source code.  
+
+There are 3 different tiers of contract verification available when open sourcing contracts on Etherscan.  
+Unverified
+
+An unverified contract tab is the default for all contract addresses upon being deployed to the blockchain, showcasing the contract creation's bytecode.
+
+As the contract creator, you may choose to verify your source code from which, if successful, will be updated to Exact Match.
+Similar Match
+
+    You may search for similar contracts using our Similar Match Search tool!
+
+A similar match verification happens automatically when your contract creation's bytecode matches an existing contract that has been deployed and verified on Etherscan.
+
+This however does not take into account constructor arguments ( simply initial settings of a contract, or if you'd like to dive deeper ).  
+
+The contract code tab displays a yellow verified badge, along with the contract address it was matched to.
+Exact Match
+
+Akin to Similar Match above, an Exact Match verification represents the exact contract code that was deployed, along with any constructor arguments that was deployed with it.
+
+The contract code tab displays a green verified badge, complete source code and deployment details, as well as the ability to interact with it via our built-in Read/Write contract buttons.
+Contract Verification FAQs
+Can I unverify a contract ?
+
+In general — no. Contracts that have been verified on Etherscan are considered to have been made open source.
+Can Similar Match be upgraded to Exact Match ?
+
+If your contract was verified via Similar Match, there is no tool to include constructor arguments to attain Exact Match for the time being — we're considering making this an option in the future!

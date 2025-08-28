@@ -1,5 +1,5 @@
 ---
-title: "Get 'Internal Transactions' by Block Range"
+title: "Get Internal Transactions by Block Range"
 api: 'GET /v2/api'
 keywords: ['internal transactions', 'txlistinternal block range']
 ---
@@ -9,14 +9,14 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns internal transactions within a block range" />
 
-  <ParamField query="chainid" type="string" initialValue="1" placeholder="e.g. 1">
-    Chain ID of the network {chain}.
+  <ParamField query="chainid" type="string" initialValue="1" >
+    Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
   <ParamField query="module" type="string" initialValue="account">
-    Module name (set to 'account').
+    Set to `txlistinternal` for this endpoint.
   </ParamField>
   <ParamField query="action" type="string" initialValue="txlistinternal">
-    Action type (set to 'txlistinternal').
+    Set to `account` for this endpoint.
   </ParamField>
   <ParamField query="startblock" type="integer" initialValue="13481773">
     Starting block number to search from.
@@ -31,8 +31,8 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
     Number of transactions per page.
   </ParamField>
   <ParamField query="sort" type="string" initialValue="asc">
-    Sort order ("asc" or "desc").
+    Sort order either `desc` for the latest transactions first or `asc` for the oldest transactions first.
   </ParamField>
   <ParamField query="apikey" type="string">
-    Your Etherscan API key.
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>
