@@ -20,7 +20,8 @@
                 "group": "Get Started",
                 "pages": [
                   "introduction",
-                  "development"
+                  "development",
+                  "contract-verification/verification"
                 ]
               },
               {
