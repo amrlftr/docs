@@ -1,5 +1,5 @@
 ---
-title: 'Get Beacon Chain Withdrawals by Address and Block Range'
+title: 'Get Beacon Chain Withdrawals by Address'
 api: 'GET /v2/api'
 keywords: ['beacon withdrawals', 'txsBeaconWithdrawal']
 ---
@@ -13,10 +13,10 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
   <ParamField query="module" type="string" initialValue="account">
-    Set to `account` for this endpoint
+    Set to `account` for this endpoint.
   </ParamField>
   <ParamField query="action" type="string" initialValue="txsBeaconWithdrawal">
-    Action type (set to 'txsBeaconWithdrawal').
+    Set to `txsBeaconWithdrawal` for this endpoint.
   </ParamField>
   <ParamField query="address" type="string" initialValue="0xB9D7934878B5FB9610B3fE8A5e441e8fad7E293f">
     Address to check for beacon withdrawals.

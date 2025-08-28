@@ -45,11 +45,11 @@
                   "api-reference/endpoint/etherscan-txlist",
                   "api-reference/endpoint/etherscan-tokentx",
                   "api-reference/endpoint/etherscan-tokennfttx",
-                  "api-reference/endpoint/etherscan-getminedblocks",
                   "api-reference/endpoint/etherscan-token1155tx",
+                  "api-reference/endpoint/etherscan-txlistinternal",
                   "api-reference/endpoint/etherscan-txlistinternal-blockrange",
                   "api-reference/endpoint/etherscan-txlistinternal-txhash",
-                  "api-reference/endpoint/etherscan-txlistinternal",
+                  "api-reference/endpoint/etherscan-getminedblocks",
                   "api-reference/endpoint/etherscan-txsbeaconwithdrawal"
                 ]
               }

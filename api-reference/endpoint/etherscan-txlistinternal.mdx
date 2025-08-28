@@ -1,5 +1,5 @@
 ---
-title: "Get a list of 'Internal' Transactions by Address"
+title: "Get Internal Transactions by Address"
 api: 'GET /v2/api'
 keywords: ['internal transactions', 'txlistinternal address']
 ---
@@ -16,10 +16,10 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
     Set to `account` for this endpoint
   </ParamField>
   <ParamField query="action" type="string" initialValue="txlistinternal">
-    Action type (set to 'txlistinternal').
+    Set to `txlistinternal` for this endpoint.
   </ParamField>
   <ParamField query="address" type="string" initialValue="0x2c1ba59d6f58433fb1eaee7d20b26ed83bda51a3">
-    Address to retrieve internal transactions for.
+    The address to query, like `0xfefefefefefefefefefefefefefefefefefefefe`.
   </ParamField>
   <ParamField query="startblock" type="integer" initialValue="0">
     Starting block number to search from.

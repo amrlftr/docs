@@ -15,6 +15,7 @@
 - Include expected outcomes for major steps
 - Use descriptive, keyword-rich headings
 - Keep sentences concise but informative
+- Always end all sentences with a full stop
 
 ## Required page structure
 
@@ -72,7 +73,6 @@ description: "Concise description for SEO and navigation"
 
 ## Quality standards
 
-- Test all code examples before publishing
 - Use relative paths for internal links
 - Include alt text for all images
 - Ensure proper heading hierarchy (start with h2)

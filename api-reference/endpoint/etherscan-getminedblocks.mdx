@@ -1,5 +1,5 @@
 ---
-title: 'Get list of Blocks Validated by Address'
+title: 'Get Blocks Validated by Address'
 api: 'GET /v2/api'
 keywords: ['mined blocks', 'getminedblocks']
 ---
@@ -13,16 +13,16 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
   <ParamField query="module" type="string" initialValue="account">
-    Set to `account` for this endpoint
+    Set to `account` for this endpoint.
   </ParamField>
   <ParamField query="action" type="string" initialValue="getminedblocks">
-    Action type (set to 'getminedblocks').
+    Set to `getminedblocks` for this endpoint.
   </ParamField>
   <ParamField query="address" type="string" initialValue="0x9dd134d14d1e65f84b706d6f205cd5b1cd03a46b">
     Validator The address to query, like `0xfefefefefefefefefefefefefefefefefefefefe`.
   </ParamField>
   <ParamField query="blocktype" type="string" initialValue="blocks">
-    Block type ('blocks' or 'uncles').
+    Use `blocks` for full blocks, optionally `uncles` for [pre-Merge](https://ethereum.org/en/roadmap/merge/) blocks.
   </ParamField>
   <ParamField query="page" type="integer" initialValue="1">
     Page number for pagination.
