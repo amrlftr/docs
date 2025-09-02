@@ -20,8 +20,16 @@
                 "group": "Get Started",
                 "pages": [
                   "introduction",
-                  "development",
-                  "contract-verification/verification"
+                  "supported-chains"
+                ]
+              },
+              {
+                "group": "Contract Verification",
+                "pages": [
+                  "contract-verification/verify-with-foundry",
+                  "contract-verification/verify-with-hardhat",
+                  "contract-verification/verify-with-remix",
+                  "contract-verification/common-verification-errors"
                 ]
               },
               {

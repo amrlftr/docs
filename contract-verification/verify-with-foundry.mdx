@@ -1,0 +1,41 @@
+---
+title: "Verify with Foundry"
+description: "Deploy and verify contracts with Foundry on Etherscan."
+---
+
+<Info>
+You must update to  the nightly build of Foundry to use this at the moment, via `foundryup --install nightly`
+</Info>
+
+[**Foundry**](https://book.getfoundry.sh/) is a tool that helps take the heat off smart contract development steps, including compiling, deploying and finally submitting your contract for verification.
+
+## Deploy and Verify
+
+```bash
+forge create --broadcast --rpc-url https://rpc.sepolia.ethpandaops.io --private-key YourPrivateKey src/ContractFile.sol:ContractName --verify --verifier etherscan --etherscan-api-key YourApiKeyToken
+```
+
+## Verify an Existing Contract
+
+```bash
+forge verify-contract --watch --chain sepolia 0x324eca20b358b18e48f2611f7452560ce3b3c1bb src/ContractFile.sol:ContractName --verifier etherscan --etherscan-api-key YourApiKeyToken
+```
+
+## Migrating from V1
+
+<Warning>
+API keys from any other explorer (such as BscScan/Basescan/Arbiscan) have been deprecated
+</Warning>
+
+The easiest way to migrate is to simply pass in your [**Etherscan**](https://etherscan.io/) key via `--etherscan-api-key`&#x20;
+
+For deployment scripts, in `foundry.toml` you can shorten your settings to this, without needing a different key for each chain.
+
+```toml
+etherscan_api_key = "VZFDUWB3YGQ1YCDKTCU1D6DDSS6EWI62KV"
+
+[etherscan]
+mainnet   = { key = "${ETHERSCAN_API_KEY}" } 
+```
+
+> _This open source integration was shipped by_ [_@iainnash_](https://github.com/iainnash) _and the Foundry team_
