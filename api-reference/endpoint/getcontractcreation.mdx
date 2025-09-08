@@ -10,6 +10,9 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns a contract's deployer address and creation transaction." />
 
+  <ParamField path="v2" type="string" default="v2">
+    Use the new V2 base URL https://api.etherscan.io/v2/api
+  </ParamField>
   <ParamField query="chainid" type="string" initialValue="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
