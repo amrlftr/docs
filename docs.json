@@ -33,11 +33,9 @@
                 ]
               },
               {
-                "group": "Use Cases",
+                "group": "Resources",
                 "pages": [
-                  "essentials/markdown",
-                  "essentials/code",
-                  "essentials/images"
+                  "resources/rate-limits"
                 ]
               }
             ]
