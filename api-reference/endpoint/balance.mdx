@@ -15,7 +15,7 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField query="chainid" type="string" initialValue="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="account">
+  <ParamField query="module" type="string" initialValue="account" required default="test" placeholder="test">
     Set to `account` for this endpoint.
   </ParamField>
   <ParamField query="action" type="string" initialValue="balance">
