@@ -12,28 +12,28 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="logs">
+  <ParamField query="module" type="string" default="logs">
     Set to `logs` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="getLogs">
+  <ParamField query="action" type="string" default="getLogs">
     Set to `getLogs` for this endpoint.
   </ParamField>
-  <ParamField query="address" type="string" initialValue="0xbd3531da5cf5857e7cfaa92426877b022e612cf8">
+  <ParamField query="address" type="string" default="0xbd3531da5cf5857e7cfaa92426877b022e612cf8">
     Address to check for logs.
   </ParamField>
-  <ParamField query="fromBlock" type="integer" initialValue="12878196">
+  <ParamField query="fromBlock" type="integer" default="12878196">
     Starting block number to search from.
   </ParamField>
-  <ParamField query="toBlock" type="integer" initialValue="12878196">
+  <ParamField query="toBlock" type="integer" default="12878196">
     Ending block number to search to.
   </ParamField>
-  <ParamField query="page" type="integer" initialValue="1">
+  <ParamField query="page" type="integer" default="1">
     Page number for pagination.
   </ParamField>
-  <ParamField query="offset" type="integer" initialValue="1000">
+  <ParamField query="offset" type="integer" default="1000">
     Number of records per page. Limited to 1000 records per query; use the `page` parameter for subsequent records.
   </ParamField>
   <ParamField query="apikey" type="string">

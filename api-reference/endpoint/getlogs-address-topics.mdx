@@ -12,37 +12,37 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="logs">
+  <ParamField query="module" type="string" default="logs">
     Set to `logs` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="getLogs">
+  <ParamField query="action" type="string" default="getLogs">
     Set to `getLogs` for this endpoint.
   </ParamField>
-  <ParamField query="fromBlock" type="integer" initialValue="15073139">
+  <ParamField query="fromBlock" type="integer" default="15073139">
     Starting block number to search from.
   </ParamField>
-  <ParamField query="toBlock" type="integer" initialValue="15074139">
+  <ParamField query="toBlock" type="integer" default="15074139">
     Ending block number to search to.
   </ParamField>
-  <ParamField query="address" type="string" initialValue="0x59728544b08ab483533076417fbbb2fd0b17ce3a">
+  <ParamField query="address" type="string" default="0x59728544b08ab483533076417fbbb2fd0b17ce3a">
     Address to check for logs.
   </ParamField>
-  <ParamField query="topic0" type="string" initialValue="0x27c4f0403323142b599832f26acd21c74a9e5b809f2215726e244a4ac588cd7d">
+  <ParamField query="topic0" type="string" default="0x27c4f0403323142b599832f26acd21c74a9e5b809f2215726e244a4ac588cd7d">
     First topic to filter by, such as an event signature.
   </ParamField>
-  <ParamField query="topic0_1_opr" type="string" initialValue="and">
+  <ParamField query="topic0_1_opr" type="string" default="and">
     Topic operator between `topic0` and `topic1`, either `and` or `or`.
   </ParamField>
-  <ParamField query="topic1" type="string" initialValue="0x00000000000000000000000023581767a106ae21c074b2276d25e5c3e136a68b">
+  <ParamField query="topic1" type="string" default="0x00000000000000000000000023581767a106ae21c074b2276d25e5c3e136a68b">
     Second topic to filter by.
   </ParamField>
-  <ParamField query="page" type="integer" initialValue="1">
+  <ParamField query="page" type="integer" default="1">
     Page number for pagination.
   </ParamField>
-  <ParamField query="offset" type="integer" initialValue="1000">
+  <ParamField query="offset" type="integer" default="1000">
     Number of records per page. Limited to 1000 records per query; use the `page` parameter for subsequent records.
   </ParamField>
   <ParamField query="apikey" type="string">

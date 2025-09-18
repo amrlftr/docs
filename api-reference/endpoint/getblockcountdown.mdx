@@ -9,16 +9,16 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns the estimated time remaining until a block is mined" />
 
-<ParamField query="chainid" type="string" initialValue="1">
+<ParamField query="chainid" type="string" default="1">
   Chain ID you query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
 </ParamField>
-<ParamField query="module" type="string" initialValue="block">
+<ParamField query="module" type="string" default="block">
   Set to `block` for this endpoint.
 </ParamField>
-<ParamField query="action" type="string" initialValue="getblockcountdown">
+<ParamField query="action" type="string" default="getblockcountdown">
   Set to `getblockcountdown` for this endpoint.
 </ParamField>
-<ParamField query="blockno" type="integer" initialValue="16701588">
+<ParamField query="blockno" type="integer" default="16701588">
   Block number to estimate time remaining for.
 </ParamField>
 <ParamField query="apikey" type="string">

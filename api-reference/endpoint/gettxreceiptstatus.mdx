@@ -12,16 +12,16 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="transaction">
+  <ParamField query="module" type="string" default="transaction">
     Set to `transaction` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="gettxreceiptstatus">
+  <ParamField query="action" type="string" default="gettxreceiptstatus">
     Set to `gettxreceiptstatus` for this endpoint.
   </ParamField>
-  <ParamField query="txhash" type="string" initialValue="0x513c1ba0bebf66436b5fed86ab668452b7805593c05073eb2d51d3a52f480a76">
+  <ParamField query="txhash" type="string" default="0x513c1ba0bebf66436b5fed86ab668452b7805593c05073eb2d51d3a52f480a76">
     Transaction hash to check the receipt status.
   </ParamField>
   <ParamField query="apikey" type="string">

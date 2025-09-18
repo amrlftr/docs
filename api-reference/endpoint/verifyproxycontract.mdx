@@ -13,16 +13,16 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="contract">
+  <ParamField query="module" type="string" default="contract">
     Set to `contract` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="verifyproxycontract">
+  <ParamField query="action" type="string" default="verifyproxycontract">
     Set to `verifyproxycontract` for this endpoint.
   </ParamField>
-  <ParamField query="address" type="string" initialValue="0xcbdcd3815b5f975e1a2c944a9b2cd1c985a1cb7f">
+  <ParamField query="address" type="string" default="0xcbdcd3815b5f975e1a2c944a9b2cd1c985a1cb7f">
     The proxy contract address to verify.
   </ParamField>
   <ParamField query="expectedimplementation" type="string">

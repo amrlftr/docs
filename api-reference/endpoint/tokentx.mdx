@@ -9,34 +9,34 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns ERC-20 token transfers for an address" />
 
-  <ParamField query="chainid" type="string" initialValue="1" >
+  <ParamField query="chainid" type="string" default="1" >
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="account">
+  <ParamField query="module" type="string" default="account">
     Set to `account` for this endpoint
   </ParamField>
-  <ParamField query="action" type="string" initialValue="tokentx">
+  <ParamField query="action" type="string" default="tokentx">
     Set to `tokentx` for this endpoint
   </ParamField>
-  <ParamField query="contractaddress" type="string" initialValue="0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2">
+  <ParamField query="contractaddress" type="string" default="0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2">
     The ERC20 token contract address to filter transfers by, eg `0xdac17f958d2ee523a2206206994597c13d831ec7` for USDT.
   </ParamField>
-  <ParamField query="address" type="string" initialValue="0x4e83362442b8d1bec281594cea3050c8eb01311c">
+  <ParamField query="address" type="string" default="0x4e83362442b8d1bec281594cea3050c8eb01311c">
     The address to query, like `0xfefefefefefefefefefefefefefefefefefefefe`
   </ParamField>
-  <ParamField query="startblock" type="integer" initialValue="0">
+  <ParamField query="startblock" type="integer" default="0">
     Starting block number to search from.
   </ParamField>
-  <ParamField query="endblock" type="integer" initialValue="27025780">
+  <ParamField query="endblock" type="integer" default="27025780">
     Ending block number to search to.
   </ParamField>
-    <ParamField query="page" type="integer" initialValue="1">
+    <ParamField query="page" type="integer" default="1">
     Page number for pagination.
   </ParamField>
-  <ParamField query="offset" type="integer" initialValue="100">
+  <ParamField query="offset" type="integer" default="100">
     Number of transactions per page.
   </ParamField>
-  <ParamField query="sort" type="string" initialValue="asc">
+  <ParamField query="sort" type="string" default="asc">
     Sort order either `desc` for the latest transactions first or `asc` for the oldest transactions first.
   </ParamField>
   <ParamField query="apikey" type="string">

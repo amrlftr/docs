@@ -13,19 +13,19 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="proxy">
+  <ParamField query="module" type="string" default="proxy">
     Set to `proxy` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="eth_getUncleByBlockNumberAndIndex">
+  <ParamField query="action" type="string" default="eth_getUncleByBlockNumberAndIndex">
     Set to `eth_getUncleByBlockNumberAndIndex` for this endpoint.
   </ParamField>
-  <ParamField query="tag" type="string" initialValue="0xC63276">
+  <ParamField query="tag" type="string" default="0xC63276">
     Block number in hex format.
   </ParamField>
-  <ParamField query="index" type="string" initialValue="0x0">
+  <ParamField query="index" type="string" default="0x0">
     Position of the uncle in the block, in hex.
   </ParamField>
   <ParamField query="apikey" type="string">

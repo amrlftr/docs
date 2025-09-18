@@ -12,22 +12,22 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="account">
+  <ParamField query="module" type="string" default="account">
     Set to `account` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="tokenbalance">
+  <ParamField query="action" type="string" default="tokenbalance">
     Set to `tokenbalance` for this endpoint.
   </ParamField>
-  <ParamField query="contractaddress" type="string" initialValue="0x57d90b64a1a57749b0f932f1a3395792e12e7055">
+  <ParamField query="contractaddress" type="string" default="0x57d90b64a1a57749b0f932f1a3395792e12e7055">
     Contract address of the ERC-20 token.
   </ParamField>
-  <ParamField query="address" type="string" initialValue="0xe04f27eb70e025b78871a2ad7eabe85e61212761">
+  <ParamField query="address" type="string" default="0xe04f27eb70e025b78871a2ad7eabe85e61212761">
     Address to check for token balance.
   </ParamField>
-  <ParamField query="tag" type="string" initialValue="latest">
+  <ParamField query="tag" type="string" default="latest">
     Use `latest` for the last block number of the chain.
   </ParamField>
   <ParamField query="apikey" type="string">

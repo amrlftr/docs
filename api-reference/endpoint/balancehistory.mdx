@@ -12,19 +12,19 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="account">
+  <ParamField query="module" type="string" default="account">
     Set to `account` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="balancehistory">
+  <ParamField query="action" type="string" default="balancehistory">
     Set to `balancehistory` for this endpoint.
   </ParamField>
-  <ParamField query="address" type="string" initialValue="0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae">
+  <ParamField query="address" type="string" default="0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae">
     The address to query, like `0xfefefefefefefefefefefefefefefefefefefefe`.
   </ParamField>
-  <ParamField query="blockno" type="integer" initialValue="8000000">
+  <ParamField query="blockno" type="integer" default="8000000">
     Block number to check balance at, all the way up to the genesis block `0`.
   </ParamField>
   <ParamField query="apikey" type="string">

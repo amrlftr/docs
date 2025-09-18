@@ -9,25 +9,25 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns blocks validated by an address" />
 
-  <ParamField query="chainid" type="string" initialValue="1" >
+  <ParamField query="chainid" type="string" default="1" >
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="account">
+  <ParamField query="module" type="string" default="account">
     Set to `account` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="getminedblocks">
+  <ParamField query="action" type="string" default="getminedblocks">
     Set to `getminedblocks` for this endpoint.
   </ParamField>
-  <ParamField query="address" type="string" initialValue="0x9dd134d14d1e65f84b706d6f205cd5b1cd03a46b">
+  <ParamField query="address" type="string" default="0x9dd134d14d1e65f84b706d6f205cd5b1cd03a46b">
     Validator The address to query, like `0xfefefefefefefefefefefefefefefefefefefefe`.
   </ParamField>
-  <ParamField query="blocktype" type="string" initialValue="blocks">
+  <ParamField query="blocktype" type="string" default="blocks">
     Use `blocks` for full blocks, optionally `uncles` for [pre-Merge](https://ethereum.org/en/roadmap/merge/) blocks.
   </ParamField>
-  <ParamField query="page" type="integer" initialValue="1">
+  <ParamField query="page" type="integer" default="1">
     Page number for pagination.
   </ParamField>
-  <ParamField query="offset" type="integer" initialValue="10">
+  <ParamField query="offset" type="integer" default="10">
     Number of records per page.
   </ParamField>
   <ParamField query="apikey" type="string">

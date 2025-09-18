@@ -12,19 +12,19 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="stats">
+  <ParamField query="module" type="string" default="stats">
     Set to `stats` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="tokensupplyhistory">
+  <ParamField query="action" type="string" default="tokensupplyhistory">
     Set to `tokensupplyhistory` for this endpoint.
   </ParamField>
-  <ParamField query="contractaddress" type="string" initialValue="0x57d90b64a1a57749b0f932f1a3395792e12e7055">
+  <ParamField query="contractaddress" type="string" default="0x57d90b64a1a57749b0f932f1a3395792e12e7055">
     Contract address of the ERC-20 token.
   </ParamField>
-  <ParamField query="blockno" type="integer" initialValue="8000000">
+  <ParamField query="blockno" type="integer" default="8000000">
     Block number to check total supply for.
   </ParamField>
   <ParamField query="apikey" type="string">

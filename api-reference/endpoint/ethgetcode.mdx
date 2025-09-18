@@ -13,19 +13,19 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="proxy">
+  <ParamField query="module" type="string" default="proxy">
     Set to `proxy` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="eth_getCode">
+  <ParamField query="action" type="string" default="eth_getCode">
     Set to `eth_getCode` for this endpoint.
   </ParamField>
-  <ParamField query="address" type="string" initialValue="0xf75e354c5edc8efed9b59ee9f67a80845ade7d0c">
+  <ParamField query="address" type="string" default="0xf75e354c5edc8efed9b59ee9f67a80845ade7d0c">
     The address to query.
   </ParamField>
-  <ParamField query="tag" type="string" initialValue="latest">
+  <ParamField query="tag" type="string" default="latest">
     Use `latest`, `earliest`, `pending`, or a block number in hex.
   </ParamField>
   <ParamField query="apikey" type="string">

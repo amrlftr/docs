@@ -13,28 +13,28 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
-  <ParamField query="chainid" type="string" initialValue="1">
+  <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="proxy">
+  <ParamField query="module" type="string" default="proxy">
     Set to `proxy` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="eth_estimateGas">
+  <ParamField query="action" type="string" default="eth_estimateGas">
     Set to `eth_estimateGas` for this endpoint.
   </ParamField>
-  <ParamField query="data" type="string" initialValue="0x4e71d92d">
+  <ParamField query="data" type="string" default="0x4e71d92d">
     Hash of the method signature and encoded parameters.
   </ParamField>
-  <ParamField query="to" type="string" initialValue="0xf0160428a8552ac9bb7e050d90eeade4ddd52843">
+  <ParamField query="to" type="string" default="0xf0160428a8552ac9bb7e050d90eeade4ddd52843">
     The address to interact with.
   </ParamField>
-  <ParamField query="value" type="string" initialValue="0xff22">
+  <ParamField query="value" type="string" default="0xff22">
     Value sent in this transaction, in hex.
   </ParamField>
-  <ParamField query="gasPrice" type="string" initialValue="0x51da038cc">
+  <ParamField query="gasPrice" type="string" default="0x51da038cc">
     Gas price in wei.
   </ParamField>
-  <ParamField query="gas" type="string" initialValue="0x5f5e0ff">
+  <ParamField query="gas" type="string" default="0x5f5e0ff">
     Gas limit provided for the transaction, in hex.
   </ParamField>
   <ParamField query="apikey" type="string">

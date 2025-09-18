@@ -9,34 +9,34 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns ERC-1155 token transfers for an address" />
 
-  <ParamField query="chainid" type="string" initialValue="1" >
+  <ParamField query="chainid" type="string" default="1" >
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
-  <ParamField query="module" type="string" initialValue="account">
+  <ParamField query="module" type="string" default="account">
     Set to `account` for this endpoint.
   </ParamField>
-  <ParamField query="action" type="string" initialValue="token1155tx">
+  <ParamField query="action" type="string" default="token1155tx">
     Set to `token1155tx` for this endpoint.
   </ParamField>
-  <ParamField query="contractaddress" type="string" initialValue="0x76be3b62873462d2142405439777e971754e8e77">
+  <ParamField query="contractaddress" type="string" default="0x76be3b62873462d2142405439777e971754e8e77">
     The ERC1155 token contract address to filter transfers by, eg `0x495f947276749ce646f68ac8c248420045cb7b5e` for [Opensea Shared Storefront](https://etherscan.io/token/0x495f947276749ce646f68ac8c248420045cb7b5e).
   </ParamField>
-  <ParamField query="address" type="string" initialValue="0x83f564d180b58ad9a02a449105568189ee7de8cb">
+  <ParamField query="address" type="string" default="0x83f564d180b58ad9a02a449105568189ee7de8cb">
     The address to query, like `0xfefefefefefefefefefefefefefefefefefefefe`
   </ParamField>
-  <ParamField query="page" type="integer" initialValue="1">
+  <ParamField query="page" type="integer" default="1">
     Page number for pagination.
   </ParamField>
-  <ParamField query="offset" type="integer" initialValue="100">
+  <ParamField query="offset" type="integer" default="100">
     Number of transactions per page.
   </ParamField>
-  <ParamField query="startblock" type="integer" initialValue="0">
+  <ParamField query="startblock" type="integer" default="0">
     Starting block number to search from.
   </ParamField>
-  <ParamField query="endblock" type="integer" initialValue="99999999">
+  <ParamField query="endblock" type="integer" default="99999999">
     Ending block number to search to.
   </ParamField>
-  <ParamField query="sort" type="string" initialValue="asc">
+  <ParamField query="sort" type="string" default="asc">
         Sort order either `desc` for the latest transactions first or `asc` for the oldest transactions first.
   </ParamField>
   <ParamField query="apikey" type="string">
