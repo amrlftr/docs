@@ -10,6 +10,9 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Submits a Vyper contract for verification" />
 
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
@@ -42,7 +45,4 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   </ParamField>
   <ParamField query="optimizationUsed" type="string" default="0">
     Use `1` if compiler optimizations were enabled, otherwise `0`.
-  </ParamField>
-  <ParamField query="apikey" type="string">
-    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

@@ -9,6 +9,9 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns the balance of a given address" pro={true} />
 
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>
   <ParamField query="chainid" type="string" default="1">
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
@@ -23,7 +26,4 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   </ParamField>
   <ParamField query="tag" type="string" default="latest">
     Use `latest` for the last block number of the chain. Also accepts a specific block number in hex format, like `0x10d4f` up to the last 128 blocks. For historical balances, use the [Historical Balance](/api-reference/endpoint/balancehistory) endpoint.  
-  </ParamField>
-  <ParamField query="apikey" type="string">
-    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

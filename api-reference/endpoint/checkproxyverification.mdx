@@ -10,6 +10,9 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Checks the status of a proxy contract verification" />
 
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
@@ -24,7 +27,4 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   </ParamField>
   <ParamField query="guid" type="string" default="gwgrrnfy56zf6vc1fljuejwg6pelnc5yns6fg6y2i6zfpgzquz">
     The GUID received from the proxy verification request.
-  </ParamField>
-  <ParamField query="apikey" type="string">
-    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

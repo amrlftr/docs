@@ -9,6 +9,9 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns the latest price of 1 ETH" />
 
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
@@ -20,7 +23,4 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   </ParamField>
   <ParamField query="action" type="string" default="ethprice">
     Set to `ethprice` for this endpoint.
-  </ParamField>
-  <ParamField query="apikey" type="string">
-    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

@@ -9,6 +9,9 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns Ether supply details including staking rewards, burnt fees, and withdrawn amounts" />
 
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>
   <ParamField path="v2" type="string" default="v2">
     Use the new V2 base URL https://api.etherscan.io/v2/api
   </ParamField>
@@ -20,7 +23,4 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   </ParamField>
   <ParamField query="action" type="string" default="ethsupply2">
     Set to `ethsupply2` for this endpoint.
-  </ParamField>
-  <ParamField query="apikey" type="string">
-    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

@@ -9,6 +9,9 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns internal transactions within a transaction" />
 
+  <ParamField query="apikey" type="string">
+    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+  </ParamField>
   <ParamField query="chainid" type="string" default="1" >
     Chain ID to query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
   </ParamField>
@@ -20,7 +23,4 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
   </ParamField>
   <ParamField query="txhash" type="string" default="0x40eb908387324f2b575b4879cd9d7188f69c8fc9d87c901b9e2daaea4b442170">
     Transaction hash to check for internal transactions, like `0x36dc7f05085d0e4f9c3e4116345a2a487ac8f23f7e71bcc0ae20e27abbfa931d`. Only non-zero value internal transactions are returned.
-  </ParamField>
-  <ParamField query="apikey" type="string">
-    Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
   </ParamField>

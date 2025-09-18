@@ -9,6 +9,10 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 
 <CreditChip description="Returns the amount of block rewards distributed to miners daily" pro={true} />
 
+<ParamField query="apikey" type="string">
+  Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
+</ParamField>
+
 <ParamField query="chainid" type="string" default="1">
   Chain ID you query, eg `1` for Ethereum, `8453` for Base from our [supported chains](/development).
 </ParamField>
@@ -27,7 +31,3 @@ import { CreditChip } from '/snippets/jsx-snippet.jsx';
 <ParamField query="sort" type="string" default="asc">
   Sort order, either `asc` or `desc`.
 </ParamField>
-<ParamField query="apikey" type="string">
-  Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
-</ParamField>
-
