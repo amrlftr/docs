@@ -7,7 +7,12 @@ keywords: ["Ether balance", "Etherscan balance"]
 import { chain, chainCurrency } from '/snippets/custom-variables.mdx';
 import { TryEndpointLink } from '/snippets/try-endpoint-link.jsx';
 
-  <TryEndpointLink href="https://api.etherscan.io/v2/api?chainid=1&module=account&action=balance&address=0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae&tag=latest&apikey=YourApiKeyToken" />
+  <RequestExample>
+
+```https://api.etherscan.io/v2/api?chainid=1&module=account&action=balance&address=0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae&tag=latest&apikey=YourApiKeyToken
+```
+
+</RequestExample>
 
   <ParamField query="apikey" type="string">
     Your Etherscan API key. If you're still using a legacy key from another explorer like BscScan/Basescan and so on, please refer to this migration.
