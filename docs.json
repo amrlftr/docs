@@ -222,6 +222,14 @@
   "api": {
     "mdx": {
       "server": "https://api.etherscan.io"
+    },
+    "examples": {
+      "languages": [
+        "curl",
+        "javascript",
+        "python",
+        "csharp"
+      ]
     }
   },
   "contextual": {
