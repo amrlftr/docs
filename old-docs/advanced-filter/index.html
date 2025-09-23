@@ -1,0 +1,1127 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v4.11.5"><meta name="description" content="The Advanced Filter is a powerful tool that allows users to refine and customize their search results based on specific criteria. Users can utilize the Advanced Filter to extract valuable insights and perform targeted analysis within the vast Ethereum data on {{explorer}}."><meta name="HandheldFriendly" content="True"><meta name="referrer" content="no-referrer-when-downgrade"><meta property="og:site_name" content="Etherscan Information Center"><meta property="og:type" content="article"><meta property="og:title" content="Etherscan Information Center"><meta property="og:description" content="The Advanced Filter is a powerful tool that allows users to refine and customize their search results based on specific criteria. Users can utilize the Advanced Filter to extract valuable insights and perform targeted analysis within the vast Ethereum data on Etherscan."><meta property="og:url" content="https://info.etherscan.com/advanced-filter/"><meta property="og:image" content="https://info.etherscan.com/explorer/etherscan/og-preview.jpg"><meta property="article:publisher" content="https://facebook.com/etherscan"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Etherscan Information Center"><meta name="twitter:description" content="The Etherscan Information Center is a comprehensive resource for learning about Etherscan and the Ethereum blockchain."><meta name="twitter:url" content="https://info.etherscan.com/advanced-filter/"><meta name="twitter:image" content="https://info.etherscan.com/explorer/etherscan/og-preview.jpg"><meta name="twitter:site" content="@etherscan"><meta property="article:published_time" content="2023-06-02T06:33:05.000+00:00"><meta property="article:modified_time" content="2025-07-08T07:06:50.000+00:00"><meta property="article:tag" content="Tutorials"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="600"><link rel="icon" type="image/x-icon" href="https://info.etherscan.com/explorer/etherscan/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="https://info.etherscan.com/explorer/etherscan/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="https://info.etherscan.com/explorer/etherscan/favicon-32x32.png"><link rel="apple-touch-icon" sizes="180x180" href="https://info.etherscan.com/explorer/etherscan/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/index.css?v=1758081345100"><link rel="stylesheet" href="/css/themes/etherscan.css"><link rel="stylesheet" href="/vendor/autocomplete/css/autocomplete.min.css"><link rel="stylesheet" href="/vendor/splide/css/splide.min.css"><link rel="canonical" href="https://info.etherscan.com/advanced-filter/"><link rel="sitemap" href="/sitemap-index.xml"><title>Etherscan Information Center | Advanced Filter</title><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","publisher":{"@type":"Organization","name":"Etherscan Information Center","url":"https://info.etherscan.com/advanced-filter/","logo":{"@type":"ImageObject","url":"https://info.etherscan.com/explorer/etherscan/apple-touch-icon.png"}},"url":"https://info.etherscan.com/advanced-filter/","image":{"@type":"ImageObject","url":"https://info.etherscan.com/advanced-filter/images/2023/05/Metadata_Social-3.png","width":1920,"height":563},"mainEntityOfPage":{"@type":"WebPage","@id":"https://info.etherscan.com/advanced-filter/"},"description":"The Advanced Filter is a powerful tool that allows users to refine and customize their search results based on specific criteria. Users can utilize the Advanced Filter to extract valuable insights and perform targeted analysis within the vast Ethereum data on Etherscan."}</script><style>.slider-progress{background:#ccc}.slider-progress-bar{background:var(--bs-primary);height:2px;transition:width .4s ease;width:0}.splide__pagination{display:none}
+</style></head> <body style="min-height: 100vh;" class="d-flex flex-column">  <div class="position-relative" style="background-color:hsla(209,23%,9%,1);
+       background-image:
+       radial-gradient(at 14% 42%, hsla(209,22%,9%,1) 0px, transparent 50%),
+       radial-gradient(at 39% 9%, hsla(209,22%,9%,1) 0px, transparent 50%),
+       radial-gradient(at 95% 85%, hsla(209,22%,9%,1) 0px, transparent 50%),
+       radial-gradient(at 99% 61%, hsla(209,22%,9%,1) 0px, transparent 50%),
+       radial-gradient(at 91% 60%, rgba(var(--bs-header-color-rgb), 0.4) 0px, transparent 50%),
+       radial-gradient(at 69% 0%, rgba(var(--bs-header-color-rgb), 0.4) 0px, transparent 50%);"> <div class="position-absolute overflow-hidden" style="inset: 0px;"> <img class="position-absolute" style="height: 40rem; top:-12rem; right: -12rem;" src="/svg/abstract-lines-kb.svg" alt=""> </div> <!-- Nav --> <nav class="navbar navbar-dark navbar-expand-lg container-lg"> <div class="container-fluid"> <div class="navbar-brand d-flex align-items-center py-2 py-lg-0"> <a href="/" class="border-end border-white border-opacity-50 me-2 pe-2"> <img width="150" src="/explorer/etherscan/logo.svg" alt="etherscan-logo" style="max-height: 3rem;"> </a> <div class="fs-6 text-white mt-0.5">Information Center</div> </div> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarLinks"> <ul class="navbar-nav w-100 justify-content-end gap-1 gap-lg-0 pt-4 pt-lg-0"> <li class="nav-item"> <a class="nav-link link-light" href="/newsletters">
+Newsletter
+</a> </li> <li class="nav-item"> <a class="nav-link link-light" href="/glossary">Glossary</a> </li> <li class="nav-item"> <a class="nav-link link-light d-flex align-items-center" href="https://etherscan.io" target="_blank" rel="noopener">
+Go to Etherscan <svg class="text-light ms-2 mb-1" fill="currentColor" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M280 80C266.7 80 256 69.25 256 56C256 42.75 266.7 32 280 32H424C437.3 32 448 42.75 448 56V200C448 213.3 437.3 224 424 224C410.7 224 400 213.3 400 200V113.9L200.1 312.1C191.6 322.3 176.4 322.3 167 312.1C157.7 303.6 157.7 288.4 167 279L366.1 80H280zM0 120C0 89.07 25.07 64 56 64H168C181.3 64 192 74.75 192 88C192 101.3 181.3 112 168 112H56C51.58 112 48 115.6 48 120V424C48 428.4 51.58 432 56 432H360C364.4 432 368 428.4 368 424V312C368 298.7 378.7 288 392 288C405.3 288 416 298.7 416 312V424C416 454.9 390.9 480 360 480H56C25.07 480 0 454.9 0 424V120z"></path> </svg> </a> </li> </ul> </div> </div> </nav> <!-- End Nav --> <!-- Search Panel --> <section class="py-8"> <div class="container-lg search-panel-container text-center">  <div class="p-1 auto-search-wrapper auto-search-max-height bg-white border rounded d-flex gap-2"> <div class="flex-grow-1 position-relative"> <span class="d-flex align-items-center position-absolute top-0 bottom-0" style="left: 0.85rem;"> <svg xmlns="http://www.w3.org/2000/svg" class="text-dark" style="--bs-text-opacity: 0.5;" fill="currentColor" width="16" height="16" viewBox="0 0 512 512"> <path d="M504.1 471l-134-134C399.1 301.5 415.1 256.8 415.1 208c0-114.9-93.13-208-208-208S-.0002 93.13-.0002 208S93.12 416 207.1 416c48.79 0 93.55-16.91 129-45.04l134 134C475.7 509.7 481.9 512 488 512s12.28-2.344 16.97-7.031C514.3 495.6 514.3 480.4 504.1 471zM48 208c0-88.22 71.78-160 160-160s160 71.78 160 160s-71.78 160-160 160S48 296.2 48 208z"></path> </svg> </span> <label for="search-panel" class="visually-hidden">Search</label> <input type="text" id="search-input" class="form-control form-control-lg border-0 pe-8" style="padding-left: 2.375rem;" placeholder="Search for a topic here.." autocomplete="off"> <span class="align-items-center position-absolute top-0 bottom-0 d-flex align-items-center justify-content-center d-none d-sm-flex bg-dark rounded-1 my-auto" title="Search" style="width: 1.5rem; height: 1.5rem; right: 0.5rem; --bs-bg-opacity: 0.15;"> <svg xmlns="http://www.w3.org/2000/svg" class="text-white" fill="currentColor" width="16" height="16" viewBox="0 0 320 512"> <path d="M23.97 512c-4.125 0-8.281-1.062-12.09-3.297C.4375 502-3.406 487.3 3.281 475.9l272-464c6.688-11.45 21.38-15.3 32.84-8.562c11.44 6.703 15.28 21.41 8.594 32.84l-272 464C40.25 507.8 32.22 512 23.97 512z"></path> </svg> </span> </div> </div> </div> </section> <!-- End Search Panel --> </div> <main class="flex-grow-1 px-4 px-md-0 position-relative">   <nav aria-label="breadcrumb" class="container-lg mt-8 mb-7"> <ol class="breadcrumb"> <li class="breadcrumb-item"> <a class="link-dark" href="/">Home</a> <input type="text" id="js-explorer" class="d-none" value="etherscan"> </li> <li class="breadcrumb-item" aria-current="page"> <a class="link-dark" href="/tag/tutorials"> Tutorials </a> </li>  <li class="breadcrumb-item title text-muted" aria-current="page"> Advanced Filter </li> </ol> </nav>   <section class="container-lg mb-6"> <div class="card shadow-none d-flex flex-column gap-4 p-6"> <h1 class="h2 title"> Advanced Filter </h1> <div class="content-section"> <!--kg-card-begin: html--><script>
+/*{
+  "etherscan": {
+    "explorer": "Etherscan",
+    "website": "etherscan.io",
+	"link": "https://info.etherscan.com/what-is-an-ethereum-address/",
+    "chain": "Ethereum",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "bscscan": {
+    "explorer": "Bscscan",
+    "website": "bscscan.com",
+	"link": "https://info.bscscan.com/what-is-an-address/",
+    "chain": "BNB Smart Chain",
+    "coin": "BNB",
+    "token": "BEP-20",
+    "nft": "BEP-721",
+    "sft": "BEP-1155"
+  },
+  "polygonscan": {
+    "explorer": "Polygonscan",
+    "website": "polygonscan.com",
+	"link": "https://info.polygonscan.com/what-is-an-address/",
+    "chain": "Polygon",
+    "coin": "MATIC",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "ftmscan": {
+    "explorer": "FTMScan",
+    "website": "ftmscan.com",
+	"link": "https://info.ftmscan.com/what-is-an-address/",
+    "chain": "Fantom",
+    "coin": "FTM",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "moonscan": {
+    "explorer": "Moonbeam/Moonriver",
+    "website": "moonscan.io",
+	"link": "https://info.moonscan.io/what-is-an-address/",
+    "chain": "Moonbeam/Moonriver",
+    "coin": "GLMR/MOVR",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "optimistic_etherscan": {
+    "explorer": "Optimistic Etherscan",
+    "website": "optimistic.etherscan.io",
+	"link": "https://info-optimistic.etherscan.io/what-is-an-address/",
+    "chain": "Optimism",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "arbiscan": {
+    "explorer": "Arbiscan",
+    "website": "arbiscan.io",
+	"link": "https://info.arbiscan.io/what-is-an-address/",
+    "chain": "Arbitrum",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "basescan": {
+    "explorer": "BaseScan",
+    "website": "basescan.org",
+	"link": "https://info.basescan.org/what-is-an-address/",
+    "chain": "Base",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "celoscan": {
+    "explorer": "Celoscan",
+    "website": "celoscan.io",
+	"link": "https://info.celoscan.io/what-is-an-address/",
+    "chain": "Celo",
+    "coin": "CELO",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "gnosisscan": {
+    "explorer": "Gnosisscan",
+    "website": "gnosisscan.io",
+	"link": "https://info.gnosisscan.io/what-is-an-address/",
+    "chain": "Gnosis",
+    "coin": "xDAI",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "bttcscan": {
+    "explorer": "BTTCScan",
+    "website": "bttcscan.com",
+	"link": "https://info.bttcscan.com/what-is-an-address/",
+    "chain": "BitTorrent",
+    "coin": "BTT",
+    "token": "BRC-20",
+    "nft": "BRC-721",
+    "sft": "BRC-1155"
+  },
+  "lineascan": {
+    "explorer": "LineaScan",
+    "website": "lineascan.build",
+	"link": "https://info.lineascan.build/what-is-an-address/",
+    "chain": "Linea",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "scrollscan": {
+    "explorer": "Scrollscan",
+    "website": "scrollscan.com",
+	"link": "https://info.scrollscan.com/what-is-an-address/",
+    "chain": "Scroll",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "wemixscan": {
+    "explorer": "Wemix Scan",
+    "website": "wemixscan.com",
+	"link": "https://info.wemixscan.com/what-is-an-address/",
+    "chain": "Wemix3.0",
+    "coin": "WEMIX",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "cronoscan": {
+    "explorer": "CronoScan",
+    "website": "cronoscan.com",
+	"link": "https://info.cronoscan.com/what-is-an-address/",
+    "chain": "Cronos",
+    "coin": "CRO",
+    "token": "CRC-20",
+    "nft": "CRC-721",
+    "sft": "CRC-1155"
+  },
+  "taikoscan": {
+    "explorer": "Taikoscan",
+    "website": "taikoscan.io",
+	"link": "https://info.taikoscan.io/what-is-an-address/",
+    "chain": "Taiko",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "fraxscan": {
+    "explorer": "FraxScan",
+    "website": "fraxscan.com",
+	"link": "https://info.fraxscan.com/what-is-an-address/",
+    "chain": "Frax",
+    "coin": "frxETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155"
+  },
+  "blastscan": {
+    "explorer": "Blastscan",
+    "website": "blastscan.io",
+    "kbsite": "info.blastscan.io",
+	"link": "https://info.blastscan.io/what-is-an-address/",
+    "chain": "Blast",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "kromascan": {
+    "explorer": "KromaScan",
+    "website": "kromascan.com",
+    "kbsite": "info.kromascan.com",
+	"link": "https://info.kromascan.com/what-is-an-address/",
+    "chain": "Kroma",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "mantlescan": {
+    "explorer": "MantleScan",
+    "website": "mantlescan.xyz",
+    "kbsite": "info.mantlescan.xyz",
+	"link": "https://info.mantlescan.xyz/what-is-an-address/",
+    "chain": "Mantle",
+    "coin": "MNT",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "xaiscan": {
+    "explorer": "Xaiscan",
+    "website": "xaiscan.io",
+    "kbsite": "info.xaiscan.io",
+	"link": "https://info.xaiscan.io/what-is-an-address/",
+    "chain": "Xai",
+    "coin": "XAI",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "xdcscan": {
+    "explorer": "XDCScan",
+    "website": "xdcscan.com",
+    "kbsite": "info.xdcscan.com",
+	"link": "https://info.xdcscan.com/what-is-an-address/",
+    "chain": "XDC",
+    "coin": "XDC",
+    "token": "XRC-20",
+    "nft": "XRC-721",
+    "sft": "XRC-1155",
+    "standard": "XRC"
+  },
+  "apescan": {
+    "explorer": "Apescan",
+    "website": "apescan.io",
+    "kbsite": "info.apescan.io",
+	"link": "https://info.apescan.io/what-is-an-address/",
+    "chain": "Ape",
+    "coin": "APE",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "sophscan": {
+    "explorer": "Sophscan",
+    "website": "sophscan.xyz",
+    "kbsite": "info.sophscan.xyz",
+	"link": "https://info.sophscan.xyz/what-is-an-address/",
+    "chain": "Sophon",
+    "coin": "SOPH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "uniscan": {
+    "explorer": "Uniscan",
+    "website": "uniscan.xyz",
+    "kbsite": "info.uniscan.xyz",
+	"link": "https://info.uniscan.xyz/what-is-an-address/",
+    "chain": "Uni",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "worldscan": {
+    "explorer": "WorldScan",
+    "website": "worldscan.org",
+    "kbsite": "info.worldscan.org",
+	"link": "https://info.worldscan.org/what-is-an-address/",
+    "chain": "World",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "abscan": {
+    "explorer": "Abscan",
+    "website": "abscan.org",
+    "kbsite": "info.abscan.org",
+	"link": "https://info.abscan.org/what-is-an-address/",
+    "chain": "Abstract",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "sonicscan": {
+    "explorer": "SonicScan",
+    "website": "sonicscan.org",
+    "kbsite": "info.sonicscan.org",
+	"link": "https://info.sonicscan.org/what-is-an-address/",
+    "chain": "Sonic",
+    "coin": "S",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "berascan": {
+    "explorer": "Berascan",
+    "website": "berascan.com",
+    "kbsite": "info.berascan.com",
+	"link": "https://info.berascan.com/what-is-an-address/",
+    "chain": "Berachain",
+    "coin": "BERA",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "monadscan": {
+    "explorer": "MonadScan",
+    "website": "monadscan.com",
+    "kbsite": "info.monadscan.com",
+	"link": "https://info.monadscan.com/what-is-an-address/",
+    "chain": "Monad",
+    "coin": "MON",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "memecorescan": {
+    "explorer": "MemeCoreScan",
+    "website": "memecorescan.io",
+    "kbsite": "info.memecorescan.io",
+	"link": "https://info.memecorescan.io/what-is-an-address/",
+    "chain": "MemeCore",
+    "coin": "M",
+    "token": "MRC-20",
+    "nft": "MRC-721",
+    "sft": "MRC-1155",
+    "standard": "MRC"
+  },
+  "swellchainscan": {
+    "explorer": "Swell Chain Scan",
+    "website": "swellchainscan.io",
+    "kbsite": "info.swellchainscan.io",
+	"link": "https://info.swellchainscan.io/what-is-an-address/",
+    "chain": "Swell Chain",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC"
+  },
+  "hyperevmscan": {
+    "explorer": "HyperEVMScan",
+    "website": "hyperevmscan.io",
+    "kbsite": "info.hyperevmscan.io",
+	"link": "https://info.hyperevmscan.io/what-is-an-address/",
+    "chain": "HyperEVM",
+    "coin": "HYPE",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC",
+    "proposal": "[_What Is HIP (Hyperliquid Improvement Proposals)?_](https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips)"
+  },
+  "katanascan": {
+    "explorer": "KatanaScan",
+    "website": "katanascan.com",
+    "kbsite": "info.katanascan.com",
+	"link": "https://info.katanascan.com/what-is-an-address/",
+    "chain": "Katana",
+    "coin": "ETH",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC",
+    "proposal": "[_What Is EIP (Ethereum Improvement Proposals)?_](https://eips.ethereum.org/)"
+  },
+  "seiscan": {
+    "explorer": "SeiScan",
+    "website": "seiscan.io",
+    "kbsite": "info.seiscan.io",
+	"link": "https://info.seiscan.io/what-is-an-address/",
+    "chain": "Sei",
+    "coin": "SEI",
+    "token": "ERC-20",
+    "nft": "ERC-721",
+    "sft": "ERC-1155",
+    "standard": "ERC",
+    "proposal": "[_What Is EIP (Ethereum Improvement Proposals)?_](https://eips.ethereum.org/)"
+  }
+}*/
+</script>
+<!--kg-card-end: html-->
+<div class="exp-moonscan">
+<blockquote>
+<p>Note: <a href="https://moonriver.moonscan.io/" target="_blank">Moonriver (MOVR)</a> on <a href="https://www.kraken.com/learn/what-is-kusama-ksm" target="_blank">Kusama</a> is a companion network to <a href="https://moonscan.io/" target="_blank">Moonbeam</a> and provides a permanently incentivized canary network. New code ships to Moonriver first, where it can be tested and verified under real economic conditions. Once proven, the same code ships to Moonbeam on Polkadot.</p>
+</blockquote>
+</div><p>The Advanced Filter is a powerful tool that allows users to refine and customize their search results based on specific criteria. Users can utilize the Advanced Filter to extract valuable insights and perform targeted analysis within the vast Ethereum data on Etherscan. By refining search results based on specific criteria, users can focus on transactions, addresses, and activities that are most relevant to their reserach, monitoring, or investigative needs.</p>
+<p>In this article, we will break down each filter field and showcase a few scenarios where you can make the best use of this feature.</p>
+<p>To access the Advanced Filter tool, you can go <a href="https://etherscan.io/advanced-filter" target="_blank">here</a>. Alternatively, the tool can be accessed from the address page.</p>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2023/07/advanced_filter_7.png" class="kg-image" alt="" loading="lazy" width="1264" height="892"><figcaption><span style="white-space: pre-wrap;">{{img:etherscan}}</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2023/08/image-35.png" class="kg-image" alt="" loading="lazy" width="1264" height="892"><figcaption><span style="white-space: pre-wrap;">{{img:bscscan}}</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2023/10/image-43.png" class="kg-image" alt="" loading="lazy" width="2000" height="1490"><figcaption><span style="white-space: pre-wrap;">{{img:polygonscan}}</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2024/04/image-5.png" class="kg-image" alt="" loading="lazy" width="2000" height="1513"><figcaption><span style="white-space: pre-wrap;">{{img:optimistic_etherscan}}</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2024/03/image-44.png" class="kg-image" alt="" loading="lazy" width="2000" height="1502"><figcaption><span style="white-space: pre-wrap;">{{img:celoscan}}</span></figcaption></figure><h3 id="uexploring-each-filter-fieldu"><u>Exploring Each Filter Field</u></h3>
+<h4 id="1-transaction-type">1. Transaction Type</h4>
+<p>Use this filter to narrow down your analysis to specific transaction types of interest.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/05/advanced_filter-2.png" class="kg-image" alt="" loading="lazy" width="1210" height="570"></figure><p>a. <strong>Select All</strong>: Includes all transaction types.<br>
+b. <strong>Txs</strong>: Transactions involving an <a href="https://info.etherscan.com/what-is-an-ethereum-address/" target="_blank" rel="noopener nofollow">EOA</a> (Externally Owned Address, or typically referred to as a wallet address) sending ETH directly to other addresses.<br>
+c. <strong>Internal Txs</strong>: Transactions that are consequences of smart contract logic triggered by regular transactions.<br>
+d. <strong>ERC-20</strong>: Transactions involving ERC-20 tokens.<br>
+e. <strong>ERC-721</strong>: Transactions involving non-fungible ERC-721 tokens (NFTs).<br>
+f. <strong>ERC-1155</strong>: Transactions involving semi-fungible ERC-1155 tokens (SFTs).</p>
+<div class="exp-etherscan">
+<p>g. <strong>Deposit</strong>: Transactions involving the deposit of ETH into the Beacon Chain Contract in order to validate Ethereum.<br>
+h. <strong>Withdrawal</strong>: Transactions involving the withdrawal of ETH from the Beacon Chain as a result of automatic reward withdrawal or exiting as a validator.</p>
+</div><h4 id="2-method">2. Method</h4>
+<p>This refers to the specific function being executed in a transaction based on decoded <a href="https://info.etherscan.com/understanding-transaction-input-data/" target="_blank">input data</a>. It is part of the input data included in the transaction, and specifies the name of the function as well as any arguments it requires. For example, the method ID of <em><code>0xa9059cbb</code></em> decodes into the <em><code>transfer</code></em> function with parameters <em><code>address _to</code></em> and <em><code>uint256 _value</code></em>.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/06/advanced_filter_2.png" class="kg-image" alt="" loading="lazy" width="1210" height="517"></figure><p>You can filter by any function name and method ID that you know of. Some common functions include <em>Transfer</em>, <em>Mint</em>, and <em>Swap</em>.</p>
+<p>Look up the <em>Write Contract</em> and <em>Write as Proxy</em> under the Contract tab in any Contract page for a list of function names and method IDs.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/06/advanced_filter_2-1.png" class="kg-image" alt="" loading="lazy" width="1210" height="517"></figure><p>Alternatively, refer to any transaction where a specific <em>method</em> was executed, and click on the <em>Advanced Filter</em> button as shown below. This will filter for all transactions that involve the particular <em>method</em>.</p>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2023/07/advanced_filter_14.png" class="kg-image" alt="" loading="lazy" width="1270" height="453"><figcaption><span style="white-space: pre-wrap;">{{img:etherscan}}</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2023/08/image-36.png" class="kg-image" alt="" loading="lazy" width="2000" height="583"><figcaption><span style="white-space: pre-wrap;">{{img:bscscan}}</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2023/10/image-44.png" class="kg-image" alt="" loading="lazy" width="2000" height="774"><figcaption><span style="white-space: pre-wrap;">{{img:polygonscan}}</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2024/04/image-6.png" class="kg-image" alt="" loading="lazy" width="2000" height="990"><figcaption><span style="white-space: pre-wrap;">{{img:optimistic_etherscan}}</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://info.etherscan.com/advanced-filter/images/2024/03/image-45.png" class="kg-image" alt="" loading="lazy" width="2000" height="652"><figcaption><span style="white-space: pre-wrap;">{{img:celoscan}}</span></figcaption></figure><p>You can also explore more suggested methods from:</p>
+<ul>
+<li>Methods currently listed on the page</li>
+<li>Methods available in contracts currently listed under the 'To' column</li>
+</ul>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/07/advanced_filter_17.png" class="kg-image" alt="" loading="lazy" width="1778" height="844"></figure><h4 id="3-age">3. Age</h4>
+<p>You can utilize this filter to analyze transactions and activities within specific timeframes, providing insights into recent or historical events.</p>
+<p>The "Age" field offers predefined time ranges (e.g., last 1h, last 24h, last 7d, last 30d, last 90d) or the option to set a custom duration. Click to toggle between DateTime format.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/07/advanced_filter_3.png" class="kg-image" alt="" loading="lazy" width="1210" height="568"></figure><h4 id="4-from-and-to">4. From and To</h4>
+<p>You can specify whether to include or exclude transactions involving specific addresses. This filter also supports adding multiple addresses, enabling more complex and precise filtering. You can input up to 5 Ethereum addresses respectively and select "Include" or "Exclude" options.</p>
+<p>When using the 'AND' operator, the filtered results will display only the transactions that involve both the "From" and "To" addresses. Whereas using the 'OR' operator, the results will display transactions related to any of the addresses in either of the "From" and "To" fields.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/06/advanced_filter_4.png" class="kg-image" alt="" loading="lazy" width="1183" height="519"></figure><h4 id="5-amount">5. Amount</h4>
+<p>You can filter transactions based on the value transferred. It is useful for tracking transactions within specific value thresholds or analyzing high-value transfers.</p>
+<p>You can choose from a predefined amount ranges (e.g., 1-10, 1-100, 1-1K, 1-10K, 1-100K, 1-1M) or set a custom range.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/05/advanced_filter_5.png" class="kg-image" alt="" loading="lazy" width="1210" height="515"></figure><h4 id="6-asset">6. Asset</h4>
+<p>You can use this filter to search for transactions involving specific tokens by specifying the token's name, symbol, or contract address. Users can select "Is" or "Is Not" options to include or exclude transactions related to the specified token.</p>
+<p>Additionally, popular assets like ETH, USDC, USDT, DAI, WETH, and WBTC are readily available for selection. Alternatively, you could click on the filter button next to the asset to apply it as a filter.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/07/advanced_filter_6.png" class="kg-image" alt="" loading="lazy" width="1208" height="587"></figure><h4 id="7-save-filter">7. Save Filter</h4>
+<p>Save the filter for future reference. You can access your saved filters <a href="https://etherscan.io/myadvancedfilters" target="_blank">here</a>. To use this feature, you will need to log in to your Etherscan account.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/06/advanced_filter_13.png" class="kg-image" alt="" loading="lazy" width="953" height="374"></figure><h4 id="8-columns-full-screen-toggle">8. Columns &amp; Full-Screen Toggle</h4>
+<p>Customize columns that you wish to see and your preferences will be saved.</p>
+<p>You can also toggle full-screen mode to view more columns.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/07/advanced_filter_15-1.png" class="kg-image" alt="" loading="lazy" width="1210" height="568"></figure><h4 id="9-reset-filter">9. Reset Filter</h4>
+<p>Use this to easily reset all the selected filters.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/10/image_2023-10-19_113222402.png" class="kg-image" alt="" loading="lazy" width="2000" height="637"></figure><h4 id="10-last-updated">10. Last Updated</h4>
+<p>The data displayed in the filter reflects the information available up to the specified block.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/06/advanced_filter_12.png" class="kg-image" alt="" loading="lazy" width="1011" height="489"></figure><h4 id="11-topic0">11. Topic0</h4>
+<p>This refers to the specific event that is emitted in response to a function being executed in a transaction.</p>
+<p>To filter a specific event log, you would have to enter the contract <code>address</code> that emitted the particular event and the corresponding <code>Topic0</code>.</p>
+<p>Learn more about Event Logs <a href="https://info.etherscan.com/what-is-event-logs" target="_blank">here</a>.</p>
+<figure class="kg-card kg-image-card"><img src="https://info.etherscan.com/advanced-filter/images/2023/09/image-36-1.png" class="kg-image" alt="" loading="lazy" width="1960" height="1129"></figure><div class="kg-card kg-callout-card kg-callout-card-grey"><div class="kg-callout-emoji">⚠️</div><div class="kg-callout-text"><u><b><strong class="underline" style="white-space: pre-wrap;">Important note</strong></b></u>: All filter results currently include poor reputation tokens, ignore list tokens, and failed transactions, with no option to hide them.</div></div><p></p><h3 id="udemo-scenariosu"><u>Demo Scenarios</u></h3>
+<h4 id="scenario-1-analyzing-defi-exploits">Scenario 1: Analyzing DeFi Exploits</h4>
+<p>DeFi exploits can be complex, involving multiple addresses, and require extensive analysis to gain a comprehensive understanding of the incident. Traditionally, this involves opening multiple Etherscan tabs to piece together the puzzle.</p>
+<p>Fortunately, with the Advanced Filter tool on Etherscan, we can streamline our analysis by utilizing multiple filter fields to consolidate our findings and gain a clearer view of the exploit.</p>
+<p>Let's consider the <a href="https://etherscan.io/advanced-filtered?txntype=0%2C2&amp;age=2023-03-01%7E2023-03-31&amp;fadd=0xb66cd966670d962C227B3EABA30a872DbFb995db%2C%210xC511607Bed72D5b1CEeC5a6f9bB45807ced3c1de%2C0x036cec1a199234fC02f72d29e596a09440825f1C&amp;tadd=0xEe009FAF00CF54C1B4387829aF7A8Dc5f0c8C8C5%2C0xb66cd966670d962C227B3EABA30a872DbFb995db%2C0x036cec1a199234fC02f72d29e596a09440825f1C&amp;amt=100%7E100K" target="_blank">example</a> of the Euler exploit that occurred in March 2023. This exploit involved a flash loan and multiple tokens, making it crucial to focus on relevant transactions. To do so, we can filter the transaction types to include regular transactions (txs), ERC-20 token transactions, and internal transactions. To refine our analysis further, we can exclude spammy and irrelevant addresses using the 'IS NOT' option. Additionally, we can set an amount range to focus on significant transactions and filter out irrelevant assets from our investigation.</p>
+<figure class="kg-card kg-image-card kg-card-hascaption"><a href="https://etherscan.io/advanced-filtered?txntype=0%2C2&amp;age=2023-03-01%7E2023-03-31&amp;fadd=0xb66cd966670d962C227B3EABA30a872DbFb995db%2C%210xC511607Bed72D5b1CEeC5a6f9bB45807ced3c1de%2C0x036cec1a199234fC02f72d29e596a09440825f1C&amp;tadd=0xEe009FAF00CF54C1B4387829aF7A8Dc5f0c8C8C5%2C0xb66cd966670d962C227B3EABA30a872DbFb995db%2C0x036cec1a199234fC02f72d29e596a09440825f1C&amp;amt=100%7E100K" target="_blank"><img src="https://info.etherscan.com/advanced-filter/images/2023/06/advanced_filter_10.png" class="kg-image" alt="" loading="lazy" width="1207" height="653"></a><figcaption><span style="white-space: pre-wrap;">Click on the image to view this filter on Etherscan</span></figcaption></figure><h4 id="scenario-2-monitoring-nft-lending-activities">Scenario 2: Monitoring NFT Lending Activities</h4>
+<p>Another interesting use case of the Advanced Filter is to monitor NFT lending activities on platforms like Blur. By utilizing the filter fields, we can specifically track the top NFT collections being used as collateral for loans.</p>
+<p>In this <a href="https://etherscan.io/advanced-filtered?txntype=3%2C4&amp;tadd=0x29469395eAf6f95920E59F858042f0e28D98a20B&amp;mtd=0xe263967e%7EBorrow" target="_blank">scenario</a>, we can set the transaction type filter to include both ERC-721 and ERC-1155 token types, as they are NFTs. Additionally, we can further narrow down the search by selecting the "Borrow" method, specifying the Blur contract address, and filtering for the specific NFT asset we are interested in.</p>
+<p>By applying these filters, we can gain valuable insights into the lending activities associated with the targeted NFT collections. This includes tracking the borrowing transactions, monitoring the most popular NFT collections used in NFT lending, and assessing the demand for NFT-backed loans.</p>
+<figure class="kg-card kg-image-card kg-card-hascaption"><a href="https://etherscan.io/advanced-filtered?txntype=3%2C4&amp;tadd=0x29469395eAf6f95920E59F858042f0e28D98a20B&amp;mtd=0xe263967e%7EBorrow" target="_blank"><img src="https://info.etherscan.com/advanced-filter/images/2023/06/advanced_filter_11.png" class="kg-image" alt="" loading="lazy" width="1214" height="447"></a><figcaption><span style="white-space: pre-wrap;">Click on the image to view this filter on Etherscan</span></figcaption></figure><h4 id="scenario-3-comparing-eth-deposits-vs-withdrawals">Scenario 3: Comparing ETH Deposits vs Withdrawals</h4>
+<p>We can easily compare the total ETH staked vs withdrawals made within the last 24H. Since we are specifically interested in full withdrawals within the last 24H, we can apply a <a href="https://etherscan.io/advanced-filtered?txntype=5%2C6&amp;age=24H&amp;amt=10%7EMAX" target="_blank">filter</a> for an amount greater than 10.</p>
+<figure class="kg-card kg-image-card kg-card-hascaption"><a href="https://etherscan.io/advanced-filtered?txntype=5%2C6&amp;age=24H&amp;amt=10%7EMAX" target="_blank"><img src="https://info.etherscan.com/advanced-filter/images/2023/06/advanced_filter_9.png" class="kg-image" alt="" loading="lazy" width="1155" height="438"></a><figcaption><span style="white-space: pre-wrap;">Click on the image to view this filter on Etherscan</span></figcaption></figure><h4 id="your-feedback-matters">Your Feedback Matters!</h4>
+<p>We greatly appreciate your feedback in helping us improve this feature, as it is currently in the Beta phase. Our team actively gathers and evaluates community input to implement further enhancements. If you have any feedback or suggestions, please don't hesitate to share them with us <a href="https://twitter.com/etherscan/status/1664589479917813761" target="_blank">here</a>. Your valuable insights are highly appreciated!</p>
+ </div> <div class="d-flex align-items-center"> <div class="me-3"> <img style="width: 32px;height:32px;" class="avatar" src="/images/2023/06/image_2023-06-19_125216232.png" alt="Teck Yuan Lee"> </div> <div> <div class="fw-semibold mb-n1">Teck Yuan Lee</div> <span class="small text-muted">
+Last updated: <time class="ms-1">8th July 2025</time> </span> </div> </div> </div> </section><section class="container-lg mb-12"> <div class="card shadow-none"> <div class="card-body p-6"> <h2 class="h4 mb-4">Related Articles</h2> <div class="row gy-3 gx-6"> <div class="col-sm-6"> <a href="/advanced-filter-pro-tips">Pro Tips for Advanced Filter</a> </div><div class="col-sm-6"> <a href="/tokenholdings-dropdown">Token Holdings Dropdown</a> </div><div class="col-sm-6"> <a href="/what-is-method-id">Method ID</a> </div><div class="col-sm-6"> <a href="/what-is-event-logs">Event Logs</a> </div><div class="col-sm-6"> <a href="/what-is-erc4337">Understanding ERC-4337 Account Abstraction</a> </div><div class="col-sm-6"> <a href="/code-reader">Code Reader</a> </div> </div> </div> </div> </section>  <section class="pb-12"> <div class="container-lg"> <hr class="mt-0 mb-12"> <h2 class="h4 mb-4">Still Have Questions?</h2> <div class="row g-5"> <div class="col-sm"> <a class="card card-hover text-dark shadow-none h-100 group bg-light" target="_blank" href="https://etherscan.io/contactus"> <div class="card-body p-6"> <div class="d-flex justify-content-between"> <svg class="mb-4" width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <defs><style>.fa-secondary{opacity:.4}</style></defs> <path class="fa-primary" fill="currentColor" style="color: var(--bs-primary)" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48z"></path> <path class="fa-secondary" fill="currentColor" style="color: var(--bs-secondary)" d="M0 112V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V112c0 15.1-7.1 29.3-19.2 38.4L275.2 313.6c-11.4 8.5-27 8.5-38.4 0L19.2 150.4C7.1 141.3 0 127.1 0 112z"></path> </svg> <svg class="text-primary group-hover" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M328 96c13.3 0 24 10.7 24 24V360c0 13.3-10.7 24-24 24s-24-10.7-24-24V177.9L73 409c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l231-231H88c-13.3 0-24-10.7-24-24s10.7-24 24-24H328z"></path></svg> </div> <h3 class="h5 mb-2">Contact Us</h3> <p class="mb-0">Our support team's ready for your questions, anytime.</p> </div> </a> </div> <div class="col-sm"> <a class="card card-hover text-dark shadow-none h-100 group bg-light" target="_blank" href="https://etherscan.io/priority-support"> <div class="card-body p-6"> <div class="d-flex justify-content-between"> <svg class="mb-4" width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <defs><style>.fa-secondary{opacity:0.4;}</style></defs> <path class="fa-primary" fill="currentColor" style="color: var(--bs-primary)" d="M205.1 73.3c-2.6-5.7-8.3-9.3-14.5-9.3s-11.9 3.6-14.5 9.3L123.4 187.4 9.3 240C3.6 242.6 0 248.3 0 254.6s3.6 11.9 9.3 14.5l114.1 52.7L176 435.8c2.6 5.7 8.3 9.3 14.5 9.3s11.9-3.6 14.5-9.3l52.7-114.1 114.1-52.7c5.7-2.6 9.3-8.3 9.3-14.5s-3.6-11.9-9.3-14.5L257.8 187.4 205.1 73.3z"></path> <path class="fa-secondary" fill="currentColor" style="color: var(--bs-secondary)" d="M327.5 85.2L384 64 405.2 7.5C406.9 3 411.2 0 416 0s9.1 3 10.8 7.5L448 64l56.5 21.2c4.5 1.7 7.5 6 7.5 10.8s-3 9.1-7.5 10.8L448 128l-21.2 56.5c-1.7 4.5-6 7.5-10.8 7.5s-9.1-3-10.8-7.5L384 128l-56.5-21.2c-4.5-1.7-7.5-6-7.5-10.8s3-9.1 7.5-10.8zm0 320L384 384l21.2-56.5c1.7-4.5 6-7.5 10.8-7.5s9.1 3 10.8 7.5L448 384l56.5 21.2c4.5 1.7 7.5 6 7.5 10.8s-3 9.1-7.5 10.8L448 448l-21.2 56.5c-1.7 4.5-6 7.5-10.8 7.5s-9.1-3-10.8-7.5L384 448l-56.5-21.2c-4.5-1.7-7.5-6-7.5-10.8s3-9.1 7.5-10.8z"></path> </svg> <svg class="text-primary group-hover" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M328 96c13.3 0 24 10.7 24 24V360c0 13.3-10.7 24-24 24s-24-10.7-24-24V177.9L73 409c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l231-231H88c-13.3 0-24-10.7-24-24s10.7-24 24-24H328z"></path></svg> </div> <h3 class="h5 mb-2">Priority Support</h3> <p class="mb-0">A Paid Service for priority handling of your needs and queries.</p> </div> </a> </div> <div class="col-sm"> <a class="card card-hover text-dark shadow-none h-100 group bg-light" target="_blank" href="https://docs.etherscan.io"> <div class="card-body p-6"> <div class="d-flex justify-content-between"> <svg class="mb-4" width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"> <defs><style>.fa-secondary{opacity:.4}</style></defs> <path class="fa-primary" fill="currentColor" style="color: var(--bs-primary)" d="M473.4 121.4c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"></path> <path class="fa-secondary" fill="currentColor" style="color: var(--bs-secondary)" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6z"></path> </svg> <svg class="text-primary group-hover" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M328 96c13.3 0 24 10.7 24 24V360c0 13.3-10.7 24-24 24s-24-10.7-24-24V177.9L73 409c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l231-231H88c-13.3 0-24-10.7-24-24s10.7-24 24-24H328z"></path></svg> </div> <h3 class="h5 mb-2">Developer Docs</h3> <p class="mb-0">In-depth explanations on technical issues faced by developers.</p> </div> </a> </div> </div> </div> </section>  <button class="js-back-to-top btn btn-light border position-fixed py-1.5 px-2" style="bottom: 1rem; right: 1rem; display: none;"> <svg xmlns="http://www.w3.org/2000/svg" class="text-dark text-opacity-50" height="18" width="18" viewBox="0 0 384 512"> <path fill="currentColor" d="M6.625 215.5l168-176C179.2 34.7 185.4 32.02 192 32.02s12.84 2.688 17.38 7.438l168 176c9.125 9.594 8.781 24.78-.8125 33.94c-9.5 9.156-24.75 8.812-33.94-.8125L216 115.9V456c0 13.25-10.75 23.1-23.1 23.1S168 469.3 168 456V115.9l-126.6 132.7C32.22 258.2 16.97 258.5 7.438 249.4C-2.156 240.2-2.5 225 6.625 215.5z"></path> </svg> </button> <script>
+    // Strip link from title
+    let titleAll = document.querySelectorAll('.title');
+    for (let h = 0; h < titleAll.length; h++) {
+      titleAll[h].innerHTML = titleAll[h].innerText.replace(/<\/?a[^>]*>/g, '');
+    }
+
+    // Explorer spesific fig
+    let explorer = document.getElementById('js-explorer').value;
+    let figcaptionNode = null;
+    let contentCollectionFig = document.querySelectorAll('.content-section figure');
+
+    for (let h = 0; h < contentCollectionFig.length; h++) {
+      figcaptionNode = contentCollectionFig[h].querySelector('figcaption');
+
+      if(figcaptionNode && figcaptionNode.textContent.startsWith('{{img:')){
+        let match = figcaptionNode.textContent.match(/{{(.*?)}}/);
+        if(!match[1].replace('img:', '').split(',').includes(explorer)){
+          contentCollectionFig[h].classList.add('d-none');
+        }
+        else {
+          figcaptionNode.textContent = match.input.replace(match[0], '').trim();
+        }
+      }
+    }
+
+    let variableDivs = document.querySelectorAll('[class^="exp-"], [class*=" exp-"]');
+
+    if(variableDivs){
+      for (let p = 0; p < variableDivs.length; p++) {
+        if(!variableDivs[p].classList.contains('exp-' + explorer)){
+          // variableDivs[p].classList.add('d-none');
+          variableDivs[p].remove();
+        }
+      }
+    }
+
+    let leadDivs = document.querySelectorAll('[class^="lead"], [class*=" lead"]');
+
+    if(leadDivs){
+      for (let r = 0; r < leadDivs.length; r++) {
+        if (leadDivs[r].textContent.includes('*')) {
+          let matches = leadDivs[r].textContent
+            .replace(/\*\*(.*?)\*\*/g, function(_, match) {
+                return '<span style="font-weight: 600;">' + match + '</span>';
+            })
+            .replace(/\*(.*?)\*/g, function(_, match) {
+                return '<em>' + match + '</em>';
+            });
+
+          leadDivs[r].innerHTML = matches;
+        }
+      }
+    }
+
+    document.querySelectorAll('.kg-image-card a').forEach(a => a.target = '_blank');
+
+    // function escapeRegExp(string) {
+    //   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // }
+
+    // let imgTags = document.querySelectorAll('.content-section img');
+    // let prevLink = '';
+
+    // if(imgTags){
+    //   for (let s = 0; s < imgTags.length; s++) {
+    //     prevLink = imgTags[s].src.split('/').slice(0, -4).join('/') + '/';
+
+    //     imgTags[s].src = imgTags[s].src.replace(
+    //       new RegExp(escapeRegExp(prevLink), 'g'),
+    //       window.location.origin + '/'
+    //     );
+
+    //     imgTags[s].srcset = imgTags[s].srcset.replace(
+    //       new RegExp(escapeRegExp(prevLink), 'g'),
+    //       window.location.origin + '/'
+    //     );
+    //   }
+    // }
+
+    // let videoTags = document.querySelectorAll('.content-section video');
+    // if(videoTags){
+    //   for (let t = 0; t < videoTags.length; t++) {
+    //     prevLink = videoTags[t].src.split('/').slice(0, -4).join('/') + '/';
+
+    //     videoTags[t].src = videoTags[t].src.replace(
+    //       new RegExp(escapeRegExp(prevLink), 'g'),
+    //       window.location.origin + '/'
+    //     );
+    //     videoTags[t].style.background = videoTags[t].style.background
+    //       .replace(
+    //         new RegExp(escapeRegExp(prevLink), 'g'),
+    //         window.location.origin + '/'
+    //       );
+    //   }
+    // }
+
+    // Fslightbox
+    // const fslightboxImages = document.querySelectorAll('.kg-image-card img, .kg-gallery-card img, .kg-video-card video');
+
+    // if(fslightboxImages.length){
+    //   fslightboxImages.forEach(function (image) {
+    //     var wrapper = document.createElement('a');
+    //     wrapper.setAttribute('data-fslightbox', '');
+    //     wrapper.setAttribute('href', image.src);
+    //     image.parentNode.insertBefore(wrapper, image.parentNode.firstChild);
+    //     wrapper.appendChild(image);
+    //   });
+    // }
+
+    // Getting Started steps
+    if(typeof gsSteps !== 'undefined'){
+      let currentStep = 0;
+      let stepHtml = `<div class="d-flex flex-column">`;
+
+      for(let i = 0; i < gsSteps.length; i++){
+        stepHtml += `<div class="js-step-${i} d-flex" data-order="${i}">
+          <div class="d-flex flex-column pr-4 align-items-center">
+            <div class="${i === 0 ? 'bg-primary text-white' : 'border border-primary'} rounded-circle text-center" style="width: 25px; height: 25px; padding: 1px;">${i+1}</div>
+            ${i !== gsSteps.length-1 ? '<div class="line h-100 bg-primary opacity-25" style="width: 1.25px; min-height: 15px;"></div>' : ''}
+          </div>
+          <div class="ms-4">
+            <div class="${i === 0 ? 'text-primary' : ''} fs-5 cursor-pointer mb-1" style="font-weight: 500;">${gsSteps[i].name}</div>
+            <p class="text-muted transition-all ${i !== 0 ? 'opacity-0' : ''}" style="${i === 0 ? 'max-height: 500px;' : 'max-height: 0;'}"">${gsSteps[i].desc}</p>
+          </div>
+        </div>`;
+      }
+
+      stepHtml += `</div>`;
+
+      document.querySelector('.step-section').insertAdjacentHTML("afterbegin", stepHtml);
+
+      let contentCollection = document.querySelector('.content-section').children;
+      let newContentCollection = [[]];
+      let countContentCollection = 0;
+
+      for (let j = 0; j < contentCollection.length; j++) {
+        if(contentCollection[j].innerHTML.includes("[start]")){
+          contentCollection[j].innerHTML = contentCollection[j].innerHTML.replace(/\[start\](<br>)?/g, "<div class='js-start-horizontal'></div>");
+        }
+
+        if(contentCollection[j].innerHTML.includes("[--------]")){
+          contentCollection[j].innerHTML = contentCollection[j].innerHTML.replace(/\[--------\](<br>)?/g, "<div class='js-horizontal'></div>");
+        }
+
+        if(contentCollection[j].innerHTML.includes("[end]")){
+          contentCollection[j].innerHTML = contentCollection[j].innerHTML.replace(/\[end\](<br>)?/g, "<div class='js-end-horizontal'></div>");
+        }
+
+        if(contentCollection[j].localName === 'script'){
+          continue;
+        }
+
+        if(contentCollection[j].localName === 'hr'){
+          countContentCollection++;
+          newContentCollection.push([]);
+          continue;
+        }
+
+        newContentCollection[countContentCollection].push(contentCollection[j]);
+      }
+
+      let contentHtml = `<div class="js-content card shadow-none mb-4">`;
+      let contentHtmlInner = ``;
+
+      for(let k = 0; k < newContentCollection.length; k++){
+        contentHtmlInner = '';
+
+        for (let l = 0; l < newContentCollection[k].length; l++) {
+          if(
+            !!newContentCollection[k][l].querySelector('.js-start-horizontal') &&
+            !!newContentCollection[k][l].querySelector('.js-horizontal') &&
+            !!newContentCollection[k][l].querySelector('.js-end-horizontal')
+          ){
+
+            for (let m = 0; m < newContentCollection[k][l].children.length; m++) {
+              let currElem = newContentCollection[k][l].children[m];
+
+              if(currElem.classList.contains('js-start-horizontal')){
+                contentHtmlInner += `<div class="splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">`;
+              }
+              else if(currElem.classList.contains('js-end-horizontal')){
+                contentHtmlInner += `</li>
+                    </ul>
+                  </div>
+                  <div class="slider-progress">
+                    <div class="slider-progress-bar"></div>
+                  </div>
+                </div>
+                <br>`;
+              }
+              else if(currElem.classList.contains('js-horizontal')){
+                contentHtmlInner += `</li><li class="splide__slide">`;
+              }
+              else{
+                contentHtmlInner += currElem.outerHTML;
+              }
+            }
+          }
+
+          else{
+
+
+            if(l !== 0){
+              let currElem = newContentCollection[k][l];
+
+              if(!!currElem.querySelector('.js-start-horizontal')){
+                contentHtmlInner += `<div class="splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">`;
+              }
+              else if(!!currElem.querySelector('.js-end-horizontal')){
+                contentHtmlInner += `</li>
+                    </ul>
+                  </div>
+                  <div class="slider-progress">
+                    <div class="slider-progress-bar"></div>
+                  </div>
+                </div>
+                <br>`;
+              }
+              else if(!!currElem.querySelector('.js-horizontal')){
+                contentHtmlInner += `</li><li class="splide__slide">`;
+              }
+              else{
+                contentHtmlInner += currElem.outerHTML;
+              }
+            }
+          }
+        }
+
+        contentHtml += `
+        <div class="card-header cursor-pointer ${k === newContentCollection.length-1 ? 'border-bottom-0' : ''}" data-order="${k}">
+          ${newContentCollection[k][0].outerHTML}
+        </div>
+        <div class="card-body transition-all ${k !== 0 ? 'd-none py-0' : ''} ${k === 0 ? 'border-bottom' : ''}" style="${k !== 0 ? 'max-height: 0;' : ''}">
+          ${contentHtmlInner}
+        </div>
+        `;
+      }
+
+      contentHtml += `</div>
+      <button type="button" class="btn btn-primary btn-sm js-continue">Continue</button>
+      <button type="button" class="btn btn-light btn-sm js-back" disabled>Back</button>
+      `;
+
+      document.querySelector('.content-section').innerHTML = contentHtml;
+      document.querySelectorAll('.content-section .js-content .card-header')[0].children[0].classList.add('text-primary');
+
+      let contentHeaderAll = document.querySelectorAll('.content-section .card-header');
+
+      for (let n = 0; n < contentHeaderAll.length; n++) {
+        contentHeaderAll[n].children[0].classList.add('mb-0');
+      }
+
+      function updateSectionFocus(clickedOrder) {
+        let allSteps = document.querySelectorAll('[class^="js-step"]');
+
+          for (let o = 0; o < allSteps.length; o++) {
+            if(o < parseInt(clickedOrder)){
+              // Steps
+              let currStep = document.querySelector('.js-step-' + o);
+              currStep.children[1].children[1].style.maxHeight = 0;
+              currStep.children[0].children[0].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M440.1 103C450.3 112.4 450.3 127.6 440.1 136.1L176.1 400.1C167.6 410.3 152.4 410.3 143 400.1L7.029 264.1C-2.343 255.6-2.343 240.4 7.029 231C16.4 221.7 31.6 221.7 40.97 231L160 350.1L407 103C416.4 93.66 431.6 93.66 440.1 103V103z"/></svg>`;
+              currStep.children[0].children[0].classList.add('bg-primary','text-white');
+              currStep.children[1].children[1].classList.add('opacity-0');
+              currStep.children[0].children[1].classList.add('bg-primary');
+              currStep.children[1].children[0].classList.add('text-primary');
+
+              // Section
+              let currSection = document.querySelectorAll('.js-content .card-body')[o];
+              currSection.classList.add('py-0', 'd-none');
+              currSection.classList.remove('py-0', 'border-bottom');
+              currSection.style.maxHeight = '0';
+              document.querySelectorAll('.content-section .js-content .card-header')[o].children[0].classList.remove('text-primary');
+            }
+
+            else if(o > parseInt(clickedOrder)){
+              // Steps
+              let currStep = document.querySelector('.js-step-' + o);
+              currStep.children[0].children[0].innerHTML = o+1;
+              currStep.children[0].children[0].classList.remove('bg-primary', 'text-white');
+              currStep.children[0].children[0].classList.add('border', 'border-primary');
+              currStep.children[1].children[1].classList.remove('opacity-0');
+              currStep.children[1].children[0].classList.remove('text-primary');
+              currStep.children[1].children[1].style.maxHeight = 0;
+              currStep.children[1].children[1].classList.add('opacity-0');
+
+              // Section
+              let currSection = document.querySelectorAll('.js-content .card-body')[o];
+              currSection.classList.add('py-0', 'd-none');
+              currSection.classList.remove('py-0', 'border-bottom');
+              currSection.style.maxHeight = '0';
+              document.querySelectorAll('.content-section .js-content .card-header')[o].children[0].classList.remove('text-primary');
+            }
+
+            else {
+              // Steps
+              let currStep = document.querySelector('.js-step-' + clickedOrder);
+              currStep.children[0].children[0].innerHTML = parseInt(clickedOrder)+1;
+              currStep.children[0].children[0].classList.remove('border', 'border-primary');
+              currStep.children[0].children[0].classList.add('bg-primary', 'text-white');
+              currStep.children[1].children[0].classList.add('text-primary');
+              currStep.children[1].children[1].style.maxHeight = '300px';
+              currStep.children[1].children[1].classList.remove('opacity-0');
+
+              // Section
+              let currSection = document.querySelectorAll('.js-content .card-body')[o];
+              currSection.classList.remove('py-0', 'd-none');
+              currSection.classList.add('border-bottom');
+              currSection.style.maxHeight = '100%';
+              document.querySelectorAll('.content-section .js-content .card-header')[o].children[0].classList.add('text-primary');
+            }
+
+            let currSection = document.querySelectorAll('.js-content .card-body')[o];
+
+            if(o !== allSteps.length-1){
+              currSection.classList.add('border-bottom');
+            }
+            else {
+              currSection.classList.add('border-top');
+            }
+          }
+
+          currentStep = parseInt(clickedOrder);
+      }
+
+      // Trigger Button
+      document.querySelector('.content-section').addEventListener('click', (e) => {
+        if(e.target.classList.contains('js-continue')){
+          let currStep = document.querySelector('.js-step-' + (currentStep));
+          currStep.children[1].children[1].style.maxHeight = 0;
+          currStep.children[0].children[0].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M440.1 103C450.3 112.4 450.3 127.6 440.1 136.1L176.1 400.1C167.6 410.3 152.4 410.3 143 400.1L7.029 264.1C-2.343 255.6-2.343 240.4 7.029 231C16.4 221.7 31.6 221.7 40.97 231L160 350.1L407 103C416.4 93.66 431.6 93.66 440.1 103V103z"/></svg>`;
+          currStep.children[1].children[1].classList.add('opacity-0');
+          currStep.children[0].children[1].classList.remove('bg-primary');
+          currStep.children[0].children[1].classList.add('bg-primary');
+
+          let nextStep = document.querySelector('.js-step-' + (parseInt(currentStep) + 1));
+          nextStep.children[0].children[0].classList.remove('border', 'border-primary');
+          nextStep.children[0].children[0].classList.add('bg-primary', 'text-white');
+          nextStep.children[1].children[0].classList.add('text-primary');
+          nextStep.children[1].children[1].style.maxHeight = '300px';
+          nextStep.children[1].children[1].classList.remove('opacity-0');
+
+          let currSection = document.querySelectorAll('.js-content .card-body')[currentStep];
+          currSection.classList.add('py-0', 'd-none');
+          currSection.classList.remove('py-0', 'border-bottom');
+          currSection.style.maxHeight = '0';
+          document.querySelectorAll('.content-section .js-content .card-header')[currentStep].children[0].classList.remove('text-primary');
+
+          let nextSection = document.querySelectorAll('.js-content .card-body')[currentStep + 1];
+          nextSection.classList.remove('py-0', 'd-none');
+          if(currentStep+1 !== gsSteps.length-1){
+            nextSection.classList.add('border-bottom');
+          }
+          else{
+            nextSection.classList.add('border-top');
+          }
+          nextSection.style.maxHeight = '100%';
+          document.querySelectorAll('.content-section .js-content .card-header')[currentStep + 1].children[0].classList.add('text-primary');
+
+          currentStep = currentStep+1;
+        }
+
+        else if(e.target.classList.contains('js-back')){
+          let currStep = document.querySelector('.js-step-' + currentStep);
+          currStep.children[0].children[0].classList.remove('bg-primary', 'text-white');
+          currStep.children[0].children[0].classList.add('border', 'border-primary');
+          currStep.children[1].children[0].classList.remove('text-primary');
+          currStep.children[1].children[1].style.maxHeight = 0;
+          currStep.children[1].children[1].classList.add('opacity-0');
+
+          let prevStep = document.querySelector('.js-step-' + (parseInt(currentStep) - 1));
+          prevStep.children[0].children[0].innerHTML = currentStep;
+          prevStep.children[1].children[1].style.maxHeight = '300px';
+          prevStep.children[1].children[1].classList.remove('opacity-0');
+          prevStep.children[0].children[1].classList.remove('bg-primary');
+          prevStep.children[0].children[1].classList.add('bg-primary');
+
+          let currSection = document.querySelectorAll('.js-content .card-body')[currentStep];
+          currSection.classList.add('py-0', 'd-none');
+          currSection.classList.remove('border-bottom');
+          currSection.style.maxHeight = '0';
+          document.querySelectorAll('.content-section .js-content .card-header')[currentStep].children[0].classList.remove('text-primary');
+
+
+          let nextSection = document.querySelectorAll('.js-content .card-body')[currentStep - 1];
+          nextSection.classList.remove('py-0', 'd-none');
+          nextSection.classList.add('border-bottom');
+          nextSection.style.maxHeight = '100%';
+          document.querySelectorAll('.content-section .js-content .card-header')[currentStep - 1].children[0].classList.add('text-primary');
+
+          currentStep = currentStep - 1;
+        }
+
+        else if(e.target.closest('.card-header')){
+          clickedOrder = e.target.closest('.card-header').dataset.order;
+
+          updateSectionFocus(clickedOrder);
+        }
+
+        document.querySelector('.js-continue').disabled = false;
+        document.querySelector('.js-back').disabled = false;
+
+        if(currentStep === gsSteps.length-1){
+          document.querySelector('.js-continue').disabled = true;
+        }
+
+        if(currentStep === 0){
+          document.querySelector('.js-back').disabled = true;
+        }
+      });
+
+      const stepSections = document.querySelectorAll("[class^='js-step-']");
+
+      for (let p = 0; p < stepSections.length; p++) {
+        stepSections[p].addEventListener( 'click', function (e) {
+          clickedOrder = stepSections[p].dataset.order;
+
+          updateSectionFocus(clickedOrder);
+        });
+      }
+    }
+    else {
+      let contentCollection = document.querySelector('.content-section').children;
+      let newContentCollection = [[]];
+      let countContentCollection = 0;
+
+      for (let j = 0; j < contentCollection.length; j++) {
+        if(contentCollection[j].innerHTML.includes("[start]")){
+          contentCollection[j].innerHTML = contentCollection[j].innerHTML.replace(/\[start\](<br>)?/g, "<div class='js-start-horizontal'></div>");
+        }
+
+        if(contentCollection[j].innerHTML.includes("[--------]")){
+          contentCollection[j].innerHTML = contentCollection[j].innerHTML.replace(/\[--------\](<br>)?/g, "<div class='js-horizontal'></div>");
+        }
+
+        if(contentCollection[j].innerHTML.includes("[end]")){
+          contentCollection[j].innerHTML = contentCollection[j].innerHTML.replace(/\[end\](<br>)?/g, "<div class='js-end-horizontal'></div>");
+        }
+
+        if(contentCollection[j].localName === 'script'){
+          continue;
+        }
+
+        newContentCollection[countContentCollection].push(contentCollection[j]);
+      }
+
+      let contentHtml = `<div>`;
+      let contentHtmlInner = ``;
+
+      for(let k = 0; k < newContentCollection.length; k++){
+        contentHtmlInner = '';
+
+        for (let l = 0; l < newContentCollection[k].length; l++) {
+          if(
+            !!newContentCollection[k][l].querySelector('.js-start-horizontal') &&
+            !!newContentCollection[k][l].querySelector('.js-horizontal') &&
+            !!newContentCollection[k][l].querySelector('.js-end-horizontal')
+          ){
+
+            for (let m = 0; m < newContentCollection[k][l].children.length; m++) {
+              let currElem = newContentCollection[k][l].children[m];
+
+              if(currElem.classList.contains('js-start-horizontal')){
+                contentHtmlInner += `<div class="splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">`;
+              }
+              else if(currElem.classList.contains('js-end-horizontal')){
+                contentHtmlInner += `</li>
+                    </ul>
+                  </div>
+                  <div class="slider-progress">
+                    <div class="slider-progress-bar"></div>
+                  </div>
+                </div>
+                <br>`;
+              }
+              else if(currElem.classList.contains('js-horizontal')){
+                contentHtmlInner += `</li><li class="splide__slide">`;
+              }
+              else{
+                contentHtmlInner += currElem.outerHTML;
+              }
+            }
+          }
+
+          else{
+            let currElem = newContentCollection[k][l];
+
+            if(!!currElem.querySelector('.js-start-horizontal')){
+              contentHtmlInner += `<div class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">`;
+            }
+            else if(!!currElem.querySelector('.js-end-horizontal')){
+              contentHtmlInner += `</li>
+                  </ul>
+                </div>
+                <div class="slider-progress">
+                  <div class="slider-progress-bar"></div>
+                </div>
+              </div>
+              <br>`;
+            }
+            else if(!!currElem.querySelector('.js-horizontal')){
+              contentHtmlInner += `</li><li class="splide__slide">`;
+            }
+            else{
+              contentHtmlInner += currElem.outerHTML;
+            }
+          }
+        }
+
+        contentHtml += `${contentHtmlInner}`;
+      }
+
+      function transformAccordions(htmlString) {
+        // Parse the entire string into a DOM structure
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlString, 'text/html');
+
+        // Find all <details> elements
+        const detailsElements = doc.querySelectorAll('details');
+
+        detailsElements.forEach(details => {
+          const summary = details.querySelector('summary');
+          if (!summary) return; // Skip if no summary tag
+
+          const summaryText = summary.textContent;
+          const bodyContent = details.querySelector('.body').innerHTML;
+          const detailsId = details.getAttribute('id');
+
+          // Construct the new HTML for this <details> element
+          const newHtml = `
+          <div class="accordion mb-4">
+            <div class="accordion-item border-0 border-start border-5 border-primary">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${detailsId}" aria-expanded="true" aria-controls="collapseOne">
+                  ${summaryText}
+                </button>
+              </h3>
+              <div id="${detailsId}" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  ${bodyContent}
+                </div>
+              </div>
+            </div>
+          </div>`;
+
+          // Replace the original <details> element with the new HTML in the string
+          htmlString = htmlString.replace(details.outerHTML, newHtml);
+        });
+
+        return htmlString;
+      }
+
+      contentHtml = transformAccordions(contentHtml);
+
+      document.querySelector('.content-section').innerHTML = contentHtml;
+
+    }
+
+    // back to top button
+    let backToTopBtn = document.querySelector(".js-back-to-top");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 500 ||
+        document.documentElement.scrollTop > 500
+      ) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    }
+
+    backToTopBtn.addEventListener("click", function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+
+  </script>  <script src="/vendor/splide/js/splide.min.js"></script> <script>
+    let elms = document.getElementsByClassName( 'splide' );
+
+    for ( let i = 0; i < elms.length; i++ ) {
+      let currSplide = window['splide' + (i + 1)];
+
+      currSplide = new Splide( elms[i] );
+      window['bar' + (i + 1)]    = currSplide.root.querySelector( '.slider-progress-bar' )
+
+      currSplide.on( 'mounted move', function () {
+        let end  = currSplide.Components.Controller.getEnd() + 1;
+        let rate = Math.min( ( currSplide.index + 1 ) / end, 1 );
+
+        window['bar' + (i + 1)].style.width = String( 100 * rate ) + '%';
+      } );
+
+      currSplide.mount();
+    }
+  </script>  </main>  <footer class="position-relative overflow-hidden py-6" style="background-color:hsla(209,23%,9%,1);
+    background-image:background-color:hsla(209,23%,9%,1);
+    background-image:
+    radial-gradient(at 14% 42%, hsla(209,22%,9%,1) 0px, transparent 50%),
+    radial-gradient(at 12% 89%, hsla(209,22%,9%,1) 0px, transparent 50%),
+    radial-gradient(at 97% 21%, hsla(209,22%,9%,1) 0px, transparent 50%),
+    radial-gradient(at 79% 55%, hsla(209,22%,9%,1) 0px, transparent 50%),
+    radial-gradient(at 52% 36%, rgba(var(--bs-header-color-rgb), 0.5) 0px, transparent 50%);"> <img class="position-absolute" style="pointer-events: none; height: 50rem; top:-26rem; right: -20rem;" src="/svg/abstract-lines-kb.svg" alt=""> <div class="container-lg"> <div class="d-flex flex-wrap align-items-center justify-content-between gap-3"> <span class="text-light">
+© <span id="footer-year"></span> Etherscan Information Center
+</span> <div class="d-flex gap-5"> <a href="https://twitter.com/etherscan" class="text-light" target="_blank" rel="noopener noreferrer"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 512 512"> <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path> </svg> </a> <a href="https://facebook.com/etherscan" class="text-light" target="_blank" rel="noopener noreferrer"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 512 512"> <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path> </svg> </a> <a href="https://www.reddit.com/r/etherscan" class="text-light" target="_blank" rel="noopener noreferrer"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 512 512"> <path d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"></path> </svg> </a> <a href="https://medium.com/etherscan-blog" class="text-light" target="_blank" rel="noopener noreferrer"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 640 512"> <path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"></path> </svg> </a> </div> </div> </div> </footer>   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-"></script> <script>(function(){const gaID = "G-";
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", gaID);
+  })();</script>  <script type="text/javascript">(function(){const matomoID = "11";
+
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://nasi.etherscan.com/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', matomoID]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  })();</script>   <script src="/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/vendor/content-api/umd/content-api.min.js"></script> <script src="/vendor/autocomplete/js/autocomplete.min.js"></script> <script src="/js/kb-search.js"></script> <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      kbSearchInit({
+        id: "search-input",
+      });
+
+      document.getElementById('footer-year').textContent = new Date().getFullYear() + ' ';
+    });
+  </script>   </body></html>

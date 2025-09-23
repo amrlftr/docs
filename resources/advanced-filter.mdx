@@ -1,0 +1,137 @@
+---
+title: "Advanced Filter"
+description: "The Advanced Filter is a powerful tool that allows users to refine and customize their search results based on specific criteria."
+---
+
+## Advanced Filter
+
+> Note: [Moonriver (MOVR)](https://moonriver.moonscan.io/) on [Kusama](https://www.kraken.com/learn/what-is-kusama-ksm) is a companion network to [Moonbeam](https://moonscan.io/) and provides a permanently incentivized canary network. New code ships to Moonriver first, where it can be tested and verified under real economic conditions. Once proven, the same code ships to Moonbeam on Polkadot.
+
+The Advanced Filter is a powerful tool that allows users to refine and customize their search results based on specific criteria. Users can utilize the Advanced Filter to extract valuable insights and perform targeted analysis within the vast Ethereum data on Etherscan. By refining search results based on specific criteria, users can focus on transactions, addresses, and activities that are most relevant to their reserach, monitoring, or investigative needs.
+
+In this article, we will break down each filter field and showcase a few scenarios where you can make the best use of this feature.
+
+<p>To access the Advanced Filter tool, you can go <a href="https://etherscan.io/advanced-filter" target="_blank">here</a>. Alternatively, the tool can be accessed from the address page.</p>
+
+## Exploring Each Filter Field
+
+### 1. Transaction Type
+
+Use this filter to narrow down your analysis to specific transaction types of interest.
+
+<p>a. <strong>Select All</strong>: Includes all transaction types.<br />
+b. <strong>Txs</strong>: Transactions involving an <a href="https://info.etherscan.com/what-is-an-ethereum-address/" target="_blank" rel="noopener nofollow">EOA</a> (Externally Owned Address, or typically referred to as a wallet address) sending ETH directly to other addresses.<br />
+c. <strong>Internal Txs</strong>: Transactions that are consequences of smart contract logic triggered by regular transactions.<br />
+d. <strong>ERC-20</strong>: Transactions involving ERC-20 tokens.<br />
+e. <strong>ERC-721</strong>: Transactions involving non-fungible ERC-721 tokens (NFTs).<br />
+f. <strong>ERC-1155</strong>: Transactions involving semi-fungible ERC-1155 tokens (SFTs).</p>
+
+<p>g. <strong>Deposit</strong>: Transactions involving the deposit of ETH into the Beacon Chain Contract in order to validate Ethereum.<br />
+h. <strong>Withdrawal</strong>: Transactions involving the withdrawal of ETH from the Beacon Chain as a result of automatic reward withdrawal or exiting as a validator.</p>
+
+### 2. Method
+
+This refers to the specific function being executed in a transaction based on decoded <a href="https://info.etherscan.com/understanding-transaction-input-data/" target="_blank">input data</a>. It is part of the input data included in the transaction, and specifies the name of the function as well as any arguments it requires. For example, the method ID of <em><code>0xa9059cbb</code></em> decodes into the <em><code>transfer</code></em> function with parameters <em><code>address _to</code></em> and <em><code>uint256 _value</code></em>.
+
+You can filter by any function name and method ID that you know of. Some common functions include Transfer, Mint, and Swap.
+
+Look up the Write Contract and Write as Proxy under the Contract tab in any Contract page for a list of function names and method IDs.
+
+Alternatively, refer to any transaction where a specific method was executed, and click on the Advanced Filter button as shown below. This will filter for all transactions that involve the particular method.
+
+You can also explore more suggested methods from:
+- Methods currently listed on the page
+- Methods available in contracts currently listed under the 'To' column
+
+### 3. Age
+
+You can utilize this filter to analyze transactions and activities within specific timeframes, providing insights into recent or historical events.
+
+The "Age" field offers predefined time ranges (e.g., last 1h, last 24h, last 7d, last 30d, last 90d) or the option to set a custom duration. Click to toggle between DateTime format.
+
+### 4. From and To
+
+You can specify whether to include or exclude transactions involving specific addresses. This filter also supports adding multiple addresses, enabling more complex and precise filtering. You can input up to 5 Ethereum addresses respectively and select "Include" or "Exclude" options.
+
+When using the 'AND' operator, the filtered results will display only the transactions that involve both the "From" and "To" addresses. Whereas using the 'OR' operator, the results will display transactions related to any of the addresses in either of the "From" and "To" fields.
+
+### 5. Amount
+
+You can filter transactions based on the value transferred. It is useful for tracking transactions within specific value thresholds or analyzing high-value transfers.
+
+You can choose from a predefined amount ranges (e.g., 1-10, 1-100, 1-1K, 1-10K, 1-100K, 1-1M) or set a custom range.
+
+### 6. Asset
+
+You can use this filter to search for transactions involving specific tokens by specifying the token's name, symbol, or contract address. Users can select "Is" or "Is Not" options to include or exclude transactions related to the specified token.
+
+Additionally, popular assets like ETH, USDC, USDT, DAI, WETH, and WBTC are readily available for selection. Alternatively, you could click on the filter button next to the asset to apply it as a filter.
+
+### 7. Save Filter
+
+Save the filter for future reference. You can access your saved filters <a href="https://etherscan.io/myadvancedfilters" target="_blank">here</a>. To use this feature, you will need to log in to your Etherscan account.
+
+### 8. Columns & Full-Screen Toggle
+
+Customize columns that you wish to see and your preferences will be saved.
+
+You can also toggle full-screen mode to view more columns.
+
+### 9. Reset Filter
+
+Use this to easily reset all the selected filters.
+
+### 10. Last Updated
+
+The data displayed in the filter reflects the information available up to the specified block.
+
+### 11. Topic0
+
+This refers to the specific event that is emitted in response to a function being executed in a transaction.
+
+To filter a specific event log, you would have to enter the contract address that emitted the particular event and the corresponding Topic0.
+
+Learn more about Event Logs <a href="https://info.etherscan.com/what-is-event-logs" target="_blank">here</a>.
+
+## Demo Scenarios
+
+### Scenario 1: Analyzing DeFi Exploits
+
+DeFi exploits can be complex, involving multiple addresses, and require extensive analysis to gain a comprehensive understanding of the incident. Traditionally, this involves opening multiple Etherscan tabs to piece together the puzzle.
+
+Fortunately, with the Advanced Filter tool on Etherscan, we can streamline our analysis by utilizing multiple filter fields to consolidate our findings and gain a clearer view of the exploit.
+
+Let's consider the example of the Euler exploit that occurred in March 2023. This exploit involved a flash loan and multiple tokens, making it crucial to focus on relevant transactions. To do so, we can filter the transaction types to include regular transactions (txs), ERC-20 token transactions, and internal transactions. To refine our analysis further, we can exclude spammy and irrelevant addresses using the 'IS NOT' option. Additionally, we can set an amount range to focus on significant transactions and filter out irrelevant assets from our investigation.
+
+### Scenario 2: Monitoring NFT Lending Activities
+
+Another interesting use case of the Advanced Filter is to monitor NFT lending activities on platforms like Blur. By utilizing the filter fields, we can specifically track the top NFT collections being used as collateral for loans.
+
+In this scenario, we can set the transaction type filter to include both ERC-721 and ERC-1155 token types, as they are NFTs. Additionally, we can further narrow down the search by selecting the "Borrow" method, specifying the Blur contract address, and filtering for the specific NFT asset we are interested in.
+
+By applying these filters, we can gain valuable insights into the lending activities associated with the targeted NFT collections. This includes tracking the borrowing transactions, monitoring the most popular NFT collections used in NFT lending, and assessing the demand for NFT-backed loans.
+
+### Scenario 3: Comparing ETH Deposits vs Withdrawals
+
+We can easily compare the total ETH staked vs withdrawals made within the last 24H. Since we are specifically interested in full withdrawals within the last 24H, we can apply a filter for an amount greater than 10.
+
+### Your Feedback Matters!
+
+We greatly appreciate your feedback in helping us improve this feature, as it is currently in the Beta phase. Our team actively gathers and evaluates community input to implement further enhancements. If you have any feedback or suggestions, please don't hesitate to share them with us <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3v1oRnyYzym5UbR32nFMPG_tnsEcKTO7wjBWBJc07hd3wNw/viewform" target="_blank">here</a>. Your valuable insights are highly appreciated!
+
+## Related Articles
+
+## Still Have Questions?
+
+### Contact Us
+
+Our support team's ready for your questions, anytime.
+
+### Priority Support
+
+A Paid Service for priority handling of your needs and queries.
+
+### Developer Docs
+
+In-depth explanations on technical issues faced by developers.
+
