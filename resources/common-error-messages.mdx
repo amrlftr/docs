@@ -1,0 +1,106 @@
+---
+title: "Common Error Messages"
+description: "Understand Etherscan API error responses and how to resolve them."
+---
+
+## Common Error Messages
+
+<Info>
+An API call that encounters an error will return 0 as its `status code` and display the cause of the error under the `result` field.
+</Info>
+
+```json
+{
+  "status": "0",
+  "message": "NOTOK",
+  "result": "Max rate limit reached, please use API Key for higher rate limit"
+}
+```
+
+### Missing or Unsupported Chain
+
+<Warning>
+"Missing or unsupported chainid parameter (required for v2 api), please see chainlist for the list of supported chainids"
+</Warning>
+
+The chain you've specified is not supported by us yet. It could also be that you've sent multiple chains at the same time like `420,10`, you can only send **one** at a time.
+
+### Invalid API Key
+
+<Warning>
+"Invalid API Key"
+</Warning>
+
+This error occurs when you specify an invalid API Key.
+
+Ensure you are using your **Etherscan API Key**, keys from other chains like Polygonscan/Arbiscan are not valid for V2.
+
+Keys do take a few minutes to activate, anything longer than should be alarming.
+
+### Max rate limit
+
+<Warning>
+"Max rate limit reached, please use API Key for higher rate limit"
+</Warning>
+
+This error occurs when you **exceed the rate limit** assigned to your specific API key.
+
+To resolve, adhere to the [**rate limits**](https://etherscan.io/apis#rate-limits) of your available plan.
+
+If you are using a script or application, **apply throttling** like a token bucket to limit the frequency of calls.
+
+### Missing or invalid action
+
+<Warning>
+"Error! Missing Or invalid Action name"
+</Warning>
+
+This error occurs when you **do not specify**, or specify an **invalid** `module` and `action` name.
+
+To resolve, **double check** your API query to use a valid module and action name.
+
+If you require some help getting started, try copying the sample queries provided in the [**API Endpoints**](https://github.com/BlockSolutions/etherscan-api-docs/blob/master/support/broken-reference/README.md) and pasting them into your browser.
+
+### Endpoint-specific errors
+
+<Warning>
+"Error! Block number already pass"
+
+"Error! Invalid address format"
+
+"Contract source code not verified"
+</Warning>
+
+These error messages returned are specific to certain endpoints and their **related parameters.**
+
+To resolve, kindly refer to the specific endpoint's documentation, and check for the **correct format** or **values** to be specified as **parameters.**
+
+### Query Timeout
+
+<Warning>
+"Query Timeout occured. Please select a smaller result dataset"
+
+"Unexpected err, timeout occurred or server too busy. Please try again later"
+</Warning>
+
+This error occurs when you have sent a particularly large query that did not manage to be completed in time.
+
+To resolve, consider selecting a smaller date/block range, though you may [**ping us**](./getting-help.mdx) if you think the issue may be performance related.
+
+### Migrate from V1
+
+<Warning>
+"Max calls per sec rate limit reached (2/sec). Please switch to API V2"
+</Warning>
+
+Please migrate to using Etherscan V2, with your Etherscan API key, here's our [**migration guide**](../v2-migration.mdx).
+
+Legacy V1 endpoints from other explorers are accessible by passing in the chain ID, eg 8453 for Base.
+
+### Free Tier Throttled
+
+<Warning>
+"Free API access is temporarily unavailable due to unusually high network activity"
+</Warning>
+
+During periods of very high load, Free tier requests may be throttled. For uninterrupted access, using any [**Paid tier**](https://etherscan.io/apis) will have your requests prioritized.

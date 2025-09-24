@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Etherscan",
@@ -157,8 +157,8 @@
           {
             "group": "Getting Help",
             "pages": [
-              "resources/frequently-asked",
-              "resources/rate-limits"
+              "resources/common-error-messages",
+              "resources/contact-us"
             ]
           }
         ]
