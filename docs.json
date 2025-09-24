@@ -9,46 +9,21 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "versions": [
+    "tabs": [
       {
-        "version": "Ethereum",
-        "tabs": [
+        "tab": "API Documentation",
+        "groups": [
           {
-            "tab": "Guides",
-            "groups": [
-              {
-                "group": "Introduction",
-                "pages": [
-                  "introduction"
-                ]
-              },
-              {
-                "group": "Contract Verification",
-                "pages": [
-                  "contract-verification/verify-with-foundry",
-                  "contract-verification/verify-with-hardhat",
-                  "contract-verification/verify-with-remix",
-                  "contract-verification/common-verification-errors"
-                ]
-              },
-              {
-                "group": "Resources",
-                "pages": [
-                  "resources/advanced-filter"
-                ]
-              }
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "supported-chains",
+              "resources/rate-limits"
             ]
           },
           {
-            "tab": "API Reference",
-            "groups": [
-              {
-                "group": "Getting Started",
-                "pages": [
-                  "supported-chains",
-                  "resources/rate-limits"
-                ]
-              },
+            "group": "API Endpoints",
+            "pages": [
               {
                 "group": "Account",
                 "pages": [
@@ -170,25 +145,31 @@
             ]
           },
           {
-            "tab": "Metadata API",
-            "groups": [
-              {
-                "group": "Endpoints",
-                "pages": [
-                  "api-reference/endpoint/nametag"
-                ]
-              }
+            "group": "Contract Verification",
+            "pages": [
+              "contract-verification/whats-contract-verification",
+              "contract-verification/verify-with-foundry",
+              "contract-verification/verify-with-hardhat",
+              "contract-verification/verify-with-remix",
+              "contract-verification/common-verification-errors"
             ]
           },
           {
-            "tab": "MCP",
-            "groups": [
-              {
-                "group": "Endpoints",
-                "pages": [
-                  "mcp/mcp-introduction"
-                ]
-              }
+            "group": "Getting Help",
+            "pages": [
+              "resources/frequently-asked",
+              "resources/rate-limits"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Model Context Protocol (MCP)",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "mcp/mcp-introduction"
             ]
           }
         ]
@@ -237,8 +218,7 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity"
+      "claude"
     ]
   }
 }
