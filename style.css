@@ -1,0 +1,35 @@
+:root{
+    --color-rgb: 36, 107, 238;
+    --navbar-bg-hsl: 220, 25%, 100%;
+}
+
+:root.twoslash-dark {
+    --navbar-bg-hsl: 209, 23%, 9%;
+}
+
+#navbar {
+    position: relative;
+    overflow: hidden;
+    background-color: hsla(var(--navbar-bg-hsl), 1);
+    background-image:
+    radial-gradient(at 14% 42%, hsla(var(--navbar-bg-hsl), 1) 0px, transparent 50%),
+    radial-gradient(at 39% 9%, hsla(var(--navbar-bg-hsl), 1) 0px, transparent 50%),
+    radial-gradient(at 95% 85%, hsla(var(--navbar-bg-hsl), 1) 0px, transparent 50%),
+    radial-gradient(at 99% 61%, hsla(var(--navbar-bg-hsl), 1) 0px, transparent 50%),
+    radial-gradient(at 91% 60%, rgba(var(--color-rgb), 0.4) 0px, transparent 50%),
+    radial-gradient(at 69% 0%, rgba(var(--color-rgb), 0.4) 0px, transparent 50%);
+}
+
+#navbar::after {
+    content: '';
+    width: 60rem;
+    height: 60rem;
+    position: absolute;
+    top: -150%;
+    right: -30%;
+    background-image: url('/images/abstract-lines-kb.svg');
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    cursor: default;
+    pointer-events: none
+}
