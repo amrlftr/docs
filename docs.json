@@ -18,7 +18,8 @@
             "pages": [
               "introduction",
               "supported-chains",
-              "resources/rate-limits"
+              "resources/rate-limits",
+              "resources/v2-migration"
             ]
           },
           {
@@ -157,8 +158,8 @@
           {
             "group": "Getting Help",
             "pages": [
-              "resources/frequently-asked",
-              "resources/rate-limits"
+              "resources/common-error-messages",
+              "resources/contact-us"
             ]
           }
         ]
