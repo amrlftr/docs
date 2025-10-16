@@ -8,7 +8,6 @@
 }
 
 #navbar {
-    position: relative;
     overflow: hidden;
     background-color: hsla(var(--navbar-bg-hsl), 1);
     background-image:
@@ -32,4 +31,16 @@
     background-repeat: no-repeat;
     cursor: default;
     pointer-events: none
+}
+
+.data-\[is-opaque\=true\]\:bg-background-light[data-is-opaque=true] {
+    background-color: initial !important;
+}
+
+.data-\[is-opaque\=true\]\:dark\:bg-background-dark\/75:is(.dark *)[data-is-opaque=true] {
+    background-color: initial !important;
+}
+
+.tryit-button {
+    background-color: #0784C3 !important;
 }

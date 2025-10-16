@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Etherscan",
   "colors": {
-    "primary": "#21325b",
-    "light": "#21325b",
-    "dark": "#21325b"
+    "primary": "#0784C3",
+    "light": "#0784C3",
+    "dark": "#0784C3"
   },
   "favicon": "/favicon.svg",
   "navigation": {
